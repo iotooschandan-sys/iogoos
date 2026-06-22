@@ -2813,9 +2813,10 @@ section.trusted {
     margin-bottom:10px;
 }
 
-.counter_text{
-    font-size:15px;
-    line-height:1.5;
+.counter_text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #222;
 }
 
 /* portfolio css */
