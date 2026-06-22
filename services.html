@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Ecommerce Development Servic | IOGOOS Solution</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- =================FAVE ICON IMAGE -->
+      <meta name="description" content="We are here to improve business performance through our creative website design, mobile app development, and digital marketing services. We provide services for all Enterprises in making a critical business decision." />
+      <link rel="icon" type="image/png" sizes="32x32" href="img/logo.svg">
+      <!-- =================FONTAWESOME LIBRARIES -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- =================GOOGLE FONTS LIBRARIES -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+      <!-- =================STYLESHEET LIBRARIES -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/aos.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.services-section {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-tag {
+  display: inline-block;
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-inner {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-inner.left-align {
+  text-align: left;
+}
+
+.image-wrapper {
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Thin + subtle white */
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.service-img {
+  width: 100%;
+  display: block;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: left;
+}
+
+p {
+  font-size: 15px;
+  color: #aaa;
+  text-align: left;
+}
+
+.inner-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Thin + subtle white */
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #111;     /* Optional: for contrast */
+}
+
+.inner-box {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 15px;
+  gap: 15px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #111;
+  padding: 5px;
+}
+
+.icon-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* 👈 Aligns text to the left */
+  text-align: left;        /* 👈 Ensures text inside is also left-aligned */
+  color: #ccc;
+}
+
+.icon-text-wrapper strong {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.icon-text-wrapper p {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-inner.left-align {
+    text-align: center;
+  }
+}
+
+
+.interactive-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  min-width: 300px;
+}
+
+.right-side {
+  position: relative;
+  background-color: #111;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 240px;
+}
+
+.detail-box {
+  display: none;+---
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.detail-box.active {
+  display: block;
+}
+
+.icon-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+}
+.detail-box .icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.detail-box strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.detail-box p {
+  color: #aaa;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #4da6ff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+ .sectionlr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 5%;
+      gap: 40px;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+      background-color: #ffffff;
+    }
+
+    .section-content {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .section-content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+
+    .section-content p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .section-image {
+      flex: 1;
+    }
+
+    .section-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 900px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .section.reverse {
+        flex-direction: column;
+      }
+
+      .section-content, .section-image {
+        max-width: 100%;
+      }
+    }
+  </style>
+
+   </head>
+   <body>
+<div style="background-color:#000">
+
+
+
+<section class="intro-section">
+  <div class="container intro-content">
+    <div class="intro-heading">
+      <h1 class="intro-title">
+        <span class="word">Our</span> <span class="word">Services</span>
+      </h1>
+
+      <h2 class="intro-subtitle">
+        <span class="word">IOGOOS Solution</span> <span class="word">is</span> <span class="word">your</span>
+        <mark class="highlight"><span class="word">Full-Service Digital</span> <span class="word">Agency</span> <span class="word">Partner.</span></mark>
+      </h2>
+
+      <p class="intro-paragraph">IOGOOS Solution is a full-service digital agency specializing in web design, mobile app development, digital marketing, corporate branding, and strategic brand positioning to help businesses grow and succeed online.</p>
+	  
+<div class="row two-column-text">
+        <div class="col">
+          <p class="par_left">As a leading web development and digital marketing agency, IOGOOS Solution goes beyond traditional website and app development or basic SEO services. We specialize in creating powerful, customer-focused web applications that drive qualified leads, boost engagement, and increase conversions.</p>
+        </div>
+        <div class="col">
+          <p class="par_right">Our expert web development team delivers exceptional digital experiences by combining in-depth market research, results-driven strategies, and flawless execution. With a strong track record of success, our clients consistently achieve measurable growth and online visibility.</p>
+        </div>
+      </div>	  
+    </div>
+  </div>
+</section>
+
+
+      
+      <div class="servicesBoxDesign">
+         <section class="sboxbg spaceT carddesign" id="card1">
+            <div class="container">
+               <div class="sboxbg_color sboxbg_color1">
+                  <div class="row">
+                     <div class="col-sm-6 col-oRder-1">
+                        <div class="heading">
+                           <h2>Design</h2>
+                           <p>We are passionate about building user-centric and intuitive experiences across all digital touchpoints. We are strategic with our design process and rely on tested design principles, best practices, and our creative edge to create websites and user interfaces that are both beautiful and functional.</p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-oRder-2">
+                        <div class="ssimage">
+                           <img src="img/designimg.png" alt="">
+                        </div>
+                     </div>
+                     <div class="col-sm-12 col-oRder-3">
+                        <div class="subserv">
+                           <h4>Our Design Expertise</h4>
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2230_31694)"> <path d="M19.44 22.99L16.38 19.92L13.52 22.78L8.89 8.89L22.78 13.52L19.92 16.38L22.99 19.44L19.44 22.99ZM16.38 17.94L19.44 21.01L21 19.45L17.93 16.39L20.18 14.14L11.1 11.11L14.13 20.19L16.38 17.94ZM3.6 18.71L2.61 17.72L6.33 14L7.32 14.99L3.6 18.71ZM5.27 11.35H0V9.95H5.27V11.35ZM15.05 7.38L14.06 6.39L17.78 2.67L18.77 3.66L15.05 7.38ZM6.39 7.32L2.67 3.6L3.66 2.61L7.38 6.33L6.39 7.32ZM11.44 5.27H10.04V0H11.44V5.27Z" fill="#BC22E3"></path> </g> <defs> <clipPath id="clip0_2230_31694"> <rect width="22.99" height="22.99" fill="white"></rect> </clipPath> </defs> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">User Experience Design</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.466309 -0.199951H28.8663V22.2001H0.466309V-0.199951ZM1.86631 1.20005V20.8H27.4663V1.20005H1.86631Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.466309 -0.199951H28.8663V4.20005H0.466309V-0.199951ZM1.86631 1.20005V2.80005H27.4663V1.20005H1.86631Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4663 5.80005H25.8663V19.2H14.4663V5.80005ZM15.8663 7.20005V17.8H24.4663V7.20005H15.8663Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4959 11.5806L25.1283 19.2001H14.4663V14.6101L17.4959 11.5806ZM17.4967 13.5596L15.8663 15.19V17.8001H21.7443L17.4967 13.5596Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6665 9.20005H3.6665V7.80005H12.6665V9.20005Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6665 12.2H3.6665V10.8H11.6665V12.2Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.6665 16.2H3.6665V14.8H7.6665V16.2Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6663 10.2C21.2245 10.2 20.8663 10.5582 20.8663 11C20.8663 11.4419 21.2245 11.8 21.6663 11.8C22.1081 11.8 22.4663 11.4419 22.4663 11C22.4663 10.5582 22.1081 10.2 21.6663 10.2ZM19.4663 11C19.4663 9.78502 20.4513 8.80005 21.6663 8.80005C22.8813 8.80005 23.8663 9.78502 23.8663 11C23.8663 12.2151 22.8813 13.2 21.6663 13.2C20.4513 13.2 19.4663 12.2151 19.4663 11Z" fill="#BC22E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Website Design</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.1333 3.80005H11.5333V11.2H4.1333V3.80005ZM5.5333 5.20005V9.80005H10.1333V5.20005H5.5333Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1333 3.80005H20.5333V11.2H13.1333V3.80005ZM14.5333 5.20005V9.80005H19.1333V5.20005H14.5333Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1333 12.8H20.5333V20.2H13.1333V12.8ZM14.5333 14.2V18.8H19.1333V14.2H14.5333Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.1333 12.8H11.5333V20.2H4.1333V12.8ZM5.5333 14.2V18.8H10.1333V14.2H5.5333Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.133301 -0.199951H2.74997V1.20005H1.5333V2.41672H0.133301V-0.199951ZM6.5833 -0.199951H10.4166V1.20005H6.5833V-0.199951ZM14.25 -0.199951H18.0833V1.20005H14.25V-0.199951ZM21.9166 -0.199951H24.5333V2.41672H23.1333V1.20005H21.9166V-0.199951ZM0.133301 10.0834V6.25005H1.5333V10.0834H0.133301ZM24.5333 6.25005V10.0834H23.1333V6.25005H24.5333ZM0.133301 17.75V13.9167H1.5333V17.75H0.133301ZM24.5333 13.9167V17.75H23.1333V13.9167H24.5333ZM0.133301 21.5834H1.5333V22.8H2.74997V24.2001H0.133301V21.5834ZM24.5333 21.5834V24.2001H21.9166V22.8H23.1333V21.5834H24.5333ZM10.4166 24.2001H6.5833V22.8H10.4166V24.2001ZM18.0833 24.2001H14.25V22.8H18.0833V24.2001Z" fill="#BC22E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Design Systems</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.200195 -0.199951H28.1998V22.2001H-0.200195V-0.199951ZM1.1998 1.20005V20.8H26.7998V1.20005H1.1998Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.200195 -0.199951H28.1998V5.20005H-0.200195V-0.199951ZM1.1998 1.20005V3.80005H26.7998V1.20005H1.1998Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0002 15.85C13.3651 15.85 12.8502 16.3648 12.8502 17V17.01C12.8502 17.6451 13.3651 18.16 14.0002 18.16H14.0102C14.6453 18.16 15.1602 17.6451 15.1602 17.01V17C15.1602 16.3648 14.6453 15.85 14.0102 15.85H14.0002ZM11.4502 17C11.4502 15.5916 12.5919 14.45 14.0002 14.45H14.0102C15.4185 14.45 16.5602 15.5916 16.5602 17V17.01C16.5602 18.4183 15.4185 19.56 14.0102 19.56H14.0002C12.5919 19.56 11.4502 18.4183 11.4502 17.01V17Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9434 7.50777C12.6075 7.35536 13.3001 7.28003 14 7.28003C14.6998 7.28003 15.3925 7.35536 16.0565 7.50777L16.6 7.63249V10.5557C17.2111 10.7992 17.7754 11.1284 18.2838 11.5267L20.8182 10.0492L21.1992 10.4705C22.1135 11.4817 22.826 12.6893 23.2477 14.03L23.4159 14.5649L20.883 16.0314C20.9265 16.346 20.95 16.668 20.95 17C20.95 17.332 20.9265 17.6541 20.883 17.9687L23.4146 19.4344L23.2483 19.9682C23.0427 20.6282 22.761 21.2683 22.4122 21.8569L21.2078 21.1432C21.407 20.8069 21.5815 20.448 21.7277 20.0754L19.3211 18.6822L19.4248 18.1866C19.5057 17.8003 19.55 17.4084 19.55 17C19.55 16.5917 19.5057 16.1998 19.4248 15.8134L19.3211 15.3179L21.7267 13.9252C21.4299 13.1702 21.0218 12.4693 20.5252 11.8405L18.119 13.2433L17.7391 12.898C17.1508 12.3631 16.4596 11.9566 15.6925 11.7186L15.2 11.5657V8.76909C14.8098 8.7099 14.4078 8.68003 14 8.68003C13.5921 8.68003 13.1901 8.7099 12.8 8.76909V11.5657L12.3074 11.7186C11.5403 11.9566 10.8492 12.3631 10.2608 12.898L9.88094 13.2433L7.47474 11.8405C6.97812 12.4693 6.57006 13.1702 6.27322 13.9252L8.67884 15.3179L8.57512 15.8134C8.49425 16.1998 8.44996 16.5917 8.44996 17C8.44996 17.4084 8.49425 17.8003 8.57512 18.1866L8.67884 18.6822L6.27227 20.0754C6.41846 20.448 6.59292 20.8069 6.79217 21.1432L5.58776 21.8569C5.23896 21.2683 4.95719 20.6282 4.75163 19.9682L4.58536 19.4344L7.11697 17.9687C7.07342 17.6541 7.04996 17.332 7.04996 17C7.04996 16.668 7.07342 16.346 7.11697 16.0314L4.58398 14.5649L4.75221 14.03C5.17389 12.6893 5.8864 11.4817 6.80076 10.4705L7.18177 10.0492L9.71615 11.5267C10.2245 11.1284 10.7889 10.7992 11.4 10.5557V7.63249L11.9434 7.50777Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 8.76909V11.5657L12.3074 11.7186C11.5403 11.9566 10.8492 12.3631 10.2608 12.898L9.88094 13.2433L7.47474 11.8405C6.97812 12.4693 6.57006 13.1702 6.27322 13.9252L8.67884 15.3179L8.57512 15.8134C8.49425 16.1998 8.44996 16.5917 8.44996 17C8.44996 17.4084 8.49425 17.8003 8.57512 18.1866L8.67884 18.6822L6.27227 20.0754C6.41846 20.448 6.59292 20.8069 6.79217 21.1432L5.58776 21.8569C5.23896 21.2683 4.95719 20.6282 4.75163 19.9682L4.58536 19.4344L7.11697 17.9687C7.07342 17.6541 7.04996 17.332 7.04996 17C7.04996 16.668 7.07342 16.346 7.11697 16.0314L4.58398 14.5649L4.75221 14.03C5.17389 12.6893 5.8864 11.4817 6.80076 10.4705L7.18177 10.0492L9.71615 11.5267C10.2245 11.1284 10.7889 10.7992 11.4 10.5557V7.63249L11.9434 7.50777C12.6075 7.35536 13.3001 7.28003 14 7.28003C14.6998 7.28003 15.3925 7.35536 16.0565 7.50777L16.6 7.63249V10.5557C17.2111 10.7992 17.7754 11.1284 18.2838 11.5267L20.8182 10.0492L21.1992 10.4705C22.1135 11.4817 22.826 12.6893 23.2477 14.03L23.4159 14.5649L20.883 16.0314C20.9265 16.346 20.95 16.668 20.95 17C20.95 17.332 20.9265 17.6541 20.883 17.9687L23.4146 19.4344L23.2483 19.9682C23.0427 20.6282 22.761 21.2683 22.4122 21.8569L21.2078 21.1432C21.407 20.8069 21.5815 20.448 21.7277 20.0754L19.3211 18.6822L19.4248 18.1866C19.5057 17.8003 19.55 17.4084 19.55 17C19.55 16.5917 19.5057 16.1998 19.4248 15.8134L19.3211 15.3179L21.7267 13.9252C21.4299 13.1702 21.0218 12.4693 20.5252 11.8405L18.119 13.2433L17.7391 12.898C17.1508 12.3631 16.4596 11.9566 15.6925 11.7186L15.2 11.5657V8.76909C14.8098 8.7099 14.4078 8.68003 14 8.68003C13.5921 8.68003 13.1901 8.7099 12.8 8.76909Z" fill="#BC22E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Software Design</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.216309 0.300049H16.6163V8.00005H15.2163V1.70005H1.61631V21.3H10.9163V22.7001H0.216309V0.300049Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4165 2.70005H6.4165V1.30005H10.4165V2.70005Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2163 7.30005H21.1163V25.7001H10.2163V7.30005ZM11.6163 8.70005V24.3H19.7163V8.70005H11.6163Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9365 10.7H14.3965V9.30005H16.9365V10.7Z" fill="#BC22E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Mobile Design</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.216309 0.300049H16.6163V8.00005H15.2163V1.70005H1.61631V21.3H10.9163V22.7001H0.216309V0.300049Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4165 2.70005H6.4165V1.30005H10.4165V2.70005Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2163 7.30005H21.1163V25.7001H10.2163V7.30005ZM11.6163 8.70005V24.3H19.7163V8.70005H11.6163Z" fill="#BC22E3"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9365 10.7H14.3965V9.30005H16.9365V10.7Z" fill="#BC22E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Accessibility Design</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="sboxbg spaceTB carddesign" id="card2">
+            <div class="container">
+               <div class="sboxbg_color sboxbg_color2">
+                  <div class="row">
+                     <div class="col-sm-6 col-oRder-1">
+                        <div class="heading">
+                           <h2>Development</h2>
+                           <p>You need a digital foundation that fosters your growth, not one that hinders it. We create robust, scaleable, and intuitive solutions that empower you for growth and can adapt alongside you as your business evolves.</p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-oRder-2">
+                        <div class="ssimage">
+                           <img src="img/developmetnimg.png" alt="">
+                        </div>
+                     </div>
+                     <div class="col-sm-12 col-oRder-3">
+                        <div class="subserv">
+                           <h4>Our Development Expertise</h4>
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M2.85938 7.96875C2.29688 9.1875 2.01562 10.5938 2.01562 12C2.01562 15.9844 4.3125 19.3594 7.64062 21L2.85938 7.96875ZM18.7031 11.5312C18.7031 12.375 18.375 13.3594 17.9531 14.7188L16.9688 18.0469L13.3594 7.35938C13.9688 7.3125 14.4844 7.26562 14.4844 7.26562C15.0469 7.17188 14.9531 6.375 14.4375 6.42188C14.4375 6.42188 12.7969 6.5625 11.7656 6.5625C10.7812 6.5625 9.14062 6.42188 9.14062 6.42188C8.625 6.375 8.53125 7.21875 9.09375 7.26562C9.09375 7.26562 9.60938 7.3125 10.125 7.35938L11.6719 11.5781L9.51562 18.1406L5.85938 7.35938C6.46875 7.3125 7.03125 7.26562 7.03125 7.26562C7.54688 7.17188 7.5 6.375 6.9375 6.42188C6.9375 6.42188 5.34375 6.5625 4.26562 6.5625C4.07812 6.5625 3.89062 6.5625 3.65625 6.5625C5.4375 3.84375 8.48438 2.0625 12 2.0625C14.5781 2.0625 16.9219 3.04688 18.7031 4.6875C18.6562 4.64062 18.6094 4.64062 18.5625 4.64062C17.625 4.64062 16.9219 5.53125 16.9219 6.42188C16.9219 7.26562 17.3906 7.96875 17.9062 8.76562C18.2812 9.42188 18.7031 10.2656 18.7031 11.5312ZM12.1406 12.8906L15.2344 21.2812C15.2344 21.3281 15.2812 21.375 15.2812 21.4219C14.25 21.7969 13.125 21.9844 12 21.9844C11.0156 21.9844 10.0781 21.8438 9.14062 21.6094L12.1406 12.8906ZM20.7188 7.21875C21.5156 8.67188 21.9375 10.2656 21.9375 12C21.9375 15.7031 19.9688 18.8906 16.9688 20.625L20.0156 11.8125C20.625 10.4062 20.8125 9.28125 20.8125 8.25C20.8125 7.875 20.7656 7.54688 20.7188 7.21875ZM23.625 12C23.625 5.625 18.375 0.375 12 0.375C5.57812 0.375 0.375 5.625 0.375 12C0.375 18.4219 5.57812 23.625 12 23.625C18.375 23.625 23.625 18.4219 23.625 12ZM23.0625 12C23.0625 18.1406 18.0938 23.1094 12 23.1094C5.85938 23.1094 0.890625 18.1406 0.890625 12C0.890625 5.90625 5.85938 0.9375 12 0.9375C18.0938 0.9375 23.0625 5.90625 23.0625 12Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">WordPress Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2230_31821)"> <path d="M23.6502 5.47993V5.42993L23.5902 5.36993L23.5502 5.32993V5.29993L23.4502 5.23993L18.9502 2.65993H18.9302L18.9102 2.63993C18.7402 2.57993 18.5402 2.56993 18.3802 2.64993L13.8802 5.22993H13.8602L13.8402 5.25993C13.8402 5.25993 13.8302 5.25993 13.8202 5.25993C13.7902 5.27993 13.7802 5.29993 13.7702 5.31993C13.7502 5.32993 13.7302 5.34993 13.7102 5.36993C13.7102 5.36993 13.7102 5.37993 13.7102 5.38993C13.7102 5.38993 13.7102 5.38993 13.7002 5.39993C13.6902 5.40993 13.6702 5.42993 13.6602 5.45993C13.6302 5.51993 13.6302 5.58993 13.6302 5.59993V5.61993V5.63993V5.65993V5.67993V5.69993V5.71993V10.5799L10.2302 12.5099V3.16993V3.14993V3.12993V3.10993V3.08993V3.06993V3.04993V2.99993H10.1502C10.2036 2.99993 10.2302 2.99993 10.2302 2.99993C10.2302 2.99993 10.2302 2.98993 10.2302 2.97993C10.2302 2.95993 10.2302 2.93993 10.2102 2.90993C10.2102 2.90993 10.2002 2.89993 10.1902 2.88993V2.72993H10.1402V2.67993H10.0002C10.0002 2.67993 9.93023 2.63993 9.91023 2.63993L5.36023 0.0899347C5.18023 -0.0500653 4.96023 -0.0200653 4.79023 0.0899347L0.300234 2.65993C0.290234 2.65993 0.280234 2.65993 0.270234 2.65993C0.270234 2.65993 0.260234 2.66993 0.250234 2.67993H0.0902344V2.72993H0.0402344V2.81993H-0.00976562V3.06993V3.08993V3.10993V3.12993V3.14993V3.16993V3.18993V18.6599C-0.00976562 18.7499 0.0102344 18.8499 0.0602344 18.9399C0.110234 19.0299 0.180234 19.0999 0.270234 19.1599H0.280234L9.26023 24.2999C9.26023 24.2999 9.26023 24.2999 9.28023 24.3099C9.29023 24.3199 9.31023 24.3399 9.34023 24.3499C9.39023 24.3799 9.44023 24.3799 9.46023 24.3799C9.50023 24.3999 9.54023 24.4199 9.59023 24.4199C9.64023 24.4199 9.69023 24.4099 9.73023 24.3799C9.73023 24.3799 9.74023 24.3799 9.75023 24.3799C9.77023 24.3799 9.79023 24.3799 9.82023 24.3599C9.85023 24.3399 9.88023 24.3199 9.91023 24.2799L18.9002 19.1599H18.9202L18.9402 19.1299C19.0202 19.0499 19.1902 18.8999 19.1902 18.6599V13.8099L23.4002 11.3799C23.6302 11.2799 23.6902 11.0399 23.6902 10.8799V5.71993V5.69993V5.67993V5.65993V5.63993V5.61993V5.59993V5.50993L23.6402 5.45993L23.6502 5.47993ZM22.5502 10.5599L19.2002 12.4899V8.63994L21.3002 7.47993L22.5402 6.71993V10.5599H22.5502ZM5.08023 1.24993L8.43023 3.17993L5.08023 5.10993L1.73023 3.17993L5.08023 1.24993ZM9.00023 13.1399L6.94023 14.3499L5.65023 15.0699V6.09993L9.00023 4.16993V13.1299V13.1399ZM1.15023 4.16993L2.44023 4.88993L4.50023 6.09993V16.1599C4.50023 16.1599 4.51023 16.2599 4.54023 16.2999V16.3299L4.59023 16.3799L4.75023 16.5399L4.77023 16.5599C4.78023 16.5599 4.79023 16.5599 4.80023 16.5599L9.00023 18.9299V22.8299L1.15023 18.2799V4.16993ZM10.1502 18.9399L18.0502 14.4799V18.2899L10.1502 22.8399V18.9399ZM9.86023 13.9899L14.1202 11.5599L17.4602 13.4799L15.0002 14.8499L9.57023 17.9399L6.23023 16.0599L9.86023 13.9899ZM9.77024 13.8299V13.8099H9.76023V13.8299H9.77024ZM15.9402 7.46993L18.0402 8.62994V12.4699L16.7502 11.7099L14.7002 10.5499V6.70993L15.9402 7.45993V7.46993ZM18.6202 7.66993L15.2702 5.69993L18.6202 3.76993L21.9702 5.69993L18.6202 7.66993Z" fill="#2286E3"></path> </g> <defs> <clipPath id="clip0_2230_31821"> <rect width="23.7" height="24.41" fill="white"></rect> </clipPath> </defs> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Laravel App Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <mask id="path-1-outside-1_2141_6328" maskUnits="userSpaceOnUse" x="-0.166504" y="0" width="27" height="19" fill="black"> <rect fill="white" x="-0.166504" width="27" height="19"></rect> <path d="M22.0835 9.65625V8.95312V8.60156C22.0835 6.33594 20.2476 4.53906 18.021 4.53906C17.4741 4.53906 16.9663 4.61719 16.5366 4.8125L15.5601 5.16406L15.0132 4.30469C14.1147 2.9375 12.5913 2 10.8335 2C8.06006 2 5.8335 4.26562 5.8335 7V7.35156V8.21094L4.97412 8.52344C3.29443 9.10938 2.0835 10.75 2.0835 12.625V17H6.4585H20.8335H24.5835V13.25C24.5835 11.8828 23.8022 10.6719 22.7085 10.0078L22.0835 9.65625ZM4.5835 7.35156V7C4.5835 3.5625 7.35693 0.75 10.8335 0.75C13.021 0.75 14.9741 1.92188 16.0679 3.64062C16.6538 3.40625 17.3179 3.25 18.021 3.25C20.9507 3.25 23.3335 5.63281 23.3335 8.5625V8.95312C24.8179 9.8125 25.8335 11.4141 25.8335 13.25V17V18.25H24.5835H20.8335H6.4585H2.0835H0.833496V17V12.625C0.833496 10.2031 2.396 8.09375 4.5835 7.35156Z"></path> </mask> <path d="M22.0835 9.65625V8.95312V8.60156C22.0835 6.33594 20.2476 4.53906 18.021 4.53906C17.4741 4.53906 16.9663 4.61719 16.5366 4.8125L15.5601 5.16406L15.0132 4.30469C14.1147 2.9375 12.5913 2 10.8335 2C8.06006 2 5.8335 4.26562 5.8335 7V7.35156V8.21094L4.97412 8.52344C3.29443 9.10938 2.0835 10.75 2.0835 12.625V17H6.4585H20.8335H24.5835V13.25C24.5835 11.8828 23.8022 10.6719 22.7085 10.0078L22.0835 9.65625ZM4.5835 7.35156V7C4.5835 3.5625 7.35693 0.75 10.8335 0.75C13.021 0.75 14.9741 1.92188 16.0679 3.64062C16.6538 3.40625 17.3179 3.25 18.021 3.25C20.9507 3.25 23.3335 5.63281 23.3335 8.5625V8.95312C24.8179 9.8125 25.8335 11.4141 25.8335 13.25V17V18.25H24.5835H20.8335H6.4585H2.0835H0.833496V17V12.625C0.833496 10.2031 2.396 8.09375 4.5835 7.35156Z" fill="#2286E3"></path> <path d="M22.0835 9.65625H21.8835V9.77322L21.9854 9.83057L22.0835 9.65625ZM16.5366 4.8125L16.6044 5.00068L16.612 4.99793L16.6194 4.99457L16.5366 4.8125ZM15.5601 5.16406L15.3913 5.27144L15.4772 5.40644L15.6278 5.35224L15.5601 5.16406ZM15.0132 4.30469L15.1819 4.1973L15.1803 4.19485L15.0132 4.30469ZM5.8335 8.21094L5.90184 8.3989L6.0335 8.35102V8.21094H5.8335ZM4.97412 8.52344L5.04 8.71229L5.04247 8.7114L4.97412 8.52344ZM2.0835 17H1.8835V17.2H2.0835V17ZM24.5835 17V17.2H24.7835V17H24.5835ZM22.7085 10.0078L22.8123 9.83676L22.8065 9.8335L22.7085 10.0078ZM4.5835 7.35156L4.64776 7.54096L4.7835 7.4949V7.35156H4.5835ZM16.0679 3.64062L15.8991 3.748L15.9882 3.88791L16.1421 3.82632L16.0679 3.64062ZM23.3335 8.95312H23.1335V9.06844L23.2333 9.12621L23.3335 8.95312ZM25.8335 18.25V18.45H26.0335V18.25H25.8335ZM0.833496 18.25H0.633496V18.45H0.833496V18.25ZM22.2835 9.65625V8.95312H21.8835V9.65625H22.2835ZM22.2835 8.95312V8.60156H21.8835V8.95312H22.2835ZM22.2835 8.60156C22.2835 6.22423 20.3568 4.33906 18.021 4.33906V4.73906C20.1384 4.73906 21.8835 6.44765 21.8835 8.60156H22.2835ZM18.021 4.33906C17.4571 4.33906 16.9183 4.41933 16.4539 4.63043L16.6194 4.99457C17.0143 4.81505 17.4912 4.73906 18.021 4.73906V4.33906ZM16.4689 4.62432L15.4923 4.97589L15.6278 5.35224L16.6044 5.00068L16.4689 4.62432ZM15.7288 5.05669L15.1819 4.19731L14.8445 4.41206L15.3913 5.27144L15.7288 5.05669ZM15.1803 4.19485C14.2487 2.77713 12.6652 1.8 10.8335 1.8V2.2C12.5174 2.2 13.9808 3.09787 14.846 4.41452L15.1803 4.19485ZM10.8335 1.8C7.94859 1.8 5.6335 4.15619 5.6335 7H6.0335C6.0335 4.37506 8.17153 2.2 10.8335 2.2V1.8ZM5.6335 7V7.35156H6.0335V7H5.6335ZM5.6335 7.35156V8.21094H6.0335V7.35156H5.6335ZM5.76515 8.02298L4.90577 8.33548L5.04247 8.7114L5.90184 8.3989L5.76515 8.02298ZM4.90825 8.3346C3.14907 8.94826 1.8835 10.6641 1.8835 12.625H2.2835C2.2835 10.8359 3.4398 9.27049 5.04 8.71228L4.90825 8.3346ZM1.8835 12.625V17H2.2835V12.625H1.8835ZM2.0835 17.2H6.4585V16.8H2.0835V17.2ZM6.4585 17.2H20.8335V16.8H6.4585V17.2ZM20.8335 17.2H24.5835V16.8H20.8335V17.2ZM24.7835 17V13.25H24.3835V17H24.7835ZM24.7835 13.25C24.7835 11.8054 23.959 10.5331 22.8123 9.83685L22.6047 10.1788C23.6455 10.8107 24.3835 11.9602 24.3835 13.25H24.7835ZM22.8065 9.8335L22.1815 9.48193L21.9854 9.83057L22.6104 10.1821L22.8065 9.8335ZM4.7835 7.35156V7H4.3835V7.35156H4.7835ZM4.7835 7C4.7835 3.67214 7.4682 0.95 10.8335 0.95V0.55C7.24566 0.55 4.3835 3.45286 4.3835 7H4.7835ZM10.8335 0.95C12.9489 0.95 14.84 2.08372 15.8991 3.748L16.2366 3.53325C15.1082 1.76003 13.0931 0.55 10.8335 0.55V0.95ZM16.1421 3.82632C16.7086 3.59974 17.3474 3.45 18.021 3.45V3.05C17.2883 3.05 16.599 3.21276 15.9936 3.45493L16.1421 3.82632ZM18.021 3.45C20.8402 3.45 23.1335 5.74327 23.1335 8.5625H23.5335C23.5335 5.52236 21.0611 3.05 18.021 3.05V3.45ZM23.1335 8.5625V8.95312H23.5335V8.5625H23.1335ZM23.2333 9.12621C24.6598 9.95209 25.6335 11.4898 25.6335 13.25H26.0335C26.0335 11.3383 24.9759 9.67291 23.4337 8.78004L23.2333 9.12621ZM25.6335 13.25V17H26.0335V13.25H25.6335ZM25.6335 17V18.25H26.0335V17H25.6335ZM25.8335 18.05H24.5835V18.45H25.8335V18.05ZM24.5835 18.05H20.8335V18.45H24.5835V18.05ZM20.8335 18.05H6.4585V18.45H20.8335V18.05ZM6.4585 18.05H2.0835V18.45H6.4585V18.05ZM2.0835 18.05H0.833496V18.45H2.0835V18.05ZM1.0335 18.25V17H0.633496V18.25H1.0335ZM1.0335 17V12.625H0.633496V17H1.0335ZM1.0335 12.625C1.0335 10.2894 2.54081 8.25581 4.64776 7.54096L4.51924 7.16217C2.25118 7.93169 0.633496 10.1168 0.633496 12.625H1.0335Z" fill="#2286E3" mask="url(#path-1-outside-1_2141_6328)"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">APIs & Integrations</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.4559 19.2294C21.1368 19.2294 21.7536 18.5046 21.7536 16.7312V13.277C21.7536 11.6269 22.5555 10.6863 23.3265 10.2391C23.5578 10.1003 23.5578 9.77645 23.3265 9.62224C22.5246 9.11336 21.7536 8.04933 21.7536 6.63062V3.23807C21.7536 1.3259 21.2293 0.770752 19.5484 0.770752H4.45156C2.7707 0.770752 2.2464 1.3259 2.2464 3.23807V6.63062C2.2464 8.04933 1.47536 9.11336 0.673483 9.62224C0.442172 9.76103 0.442172 10.1003 0.673483 10.2391C1.44452 10.6709 2.2464 11.6115 2.2464 13.277V16.7312C2.2464 18.5046 2.86322 19.2294 4.54408 19.2294H19.4559ZM11.9614 16.0681C10.1572 16.0681 8.84646 15.5284 7.62823 14.4644C7.42776 14.2793 7.35065 14.048 7.35065 13.8167C7.35065 13.6316 7.39692 13.4312 7.5357 13.277L7.9058 12.7989C8.09085 12.5676 8.29132 12.4597 8.52263 12.4597C8.78478 12.4597 9.03151 12.5676 9.29366 12.7372C10.1264 13.277 11.0516 13.5854 12.1619 13.5854C13.0101 13.5854 13.6886 13.2307 13.6886 12.5059C13.6886 10.6246 7.42776 11.6578 7.42776 7.4325C7.42776 5.16566 9.27824 3.90116 11.6839 3.90116C13.3802 3.90116 14.6292 4.39462 15.5545 4.98061C15.7858 5.13482 15.94 5.44323 15.94 5.75164C15.94 5.93669 15.8937 6.10632 15.7858 6.26053L15.5082 6.67689C15.3077 6.95446 15.0764 7.09325 14.7834 7.09325C14.583 7.09325 14.3671 7.01614 14.1358 6.9082C13.4418 6.55352 12.7171 6.36847 11.8381 6.36847C10.9283 6.36847 10.3885 6.86194 10.3885 7.37082C10.3885 9.29841 16.6493 8.2498 16.6493 12.3517C16.6493 14.6494 14.7989 16.0681 11.9614 16.0681Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Statamic Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.4634 2.48438C11.0728 2.71875 11.6821 3.04688 12.1978 3.51562L14.2134 2.8125L15.854 5.625L14.2603 7.03125C14.3071 7.35938 14.354 7.73438 14.354 8.0625C14.354 8.4375 14.3071 8.76562 14.2603 9.14062L15.854 10.5469L14.2134 13.3125L12.1978 12.6562C11.6821 13.125 11.0728 13.4531 10.4634 13.6875L9.99463 15.9375H6.71338L6.24463 13.6875C5.58838 13.4531 4.979 13.125 4.46338 12.6562L2.44775 13.3125L0.854004 10.5469L2.40088 9.14062C2.354 8.8125 2.354 8.4375 2.354 8.0625C2.354 7.73438 2.354 7.35938 2.40088 7.03125L0.854004 5.625L2.44775 2.8125L4.46338 3.51562C4.979 3.04688 5.58838 2.71875 6.24463 2.48438L6.71338 0.1875H9.99463L10.4634 2.48438ZM13.5571 4.64062L12.6665 4.92188L11.8696 5.20312L11.2134 4.64062C10.8384 4.3125 10.4165 4.03125 9.90088 3.89062L9.15088 3.5625L8.96338 2.76562L8.77588 1.6875H7.93213L7.69775 2.76562L7.51025 3.5625L6.76025 3.89062C6.24463 4.07812 5.82275 4.3125 5.44775 4.64062L4.7915 5.20312L3.99463 4.92188L3.15088 4.64062L2.729 5.29688L3.43213 5.90625L4.0415 6.46875L3.90088 7.3125C3.854 7.54688 3.80713 7.82812 3.80713 8.0625C3.80713 8.34375 3.854 8.625 3.90088 8.85938L4.0415 9.70312L3.43213 10.2656L2.729 10.875L3.15088 11.5312L3.99463 11.25L4.7915 10.9688L5.44775 11.5312C5.82275 11.8594 6.24463 12.0938 6.76025 12.2812L7.51025 12.6094L7.69775 13.4062L7.93213 14.4375H8.77588L8.96338 13.4062L9.15088 12.5625L9.90088 12.2812C10.4165 12.0938 10.8384 11.8594 11.2134 11.5312L11.8696 10.9688L12.6665 11.25L13.5571 11.5312L13.9321 10.875L13.229 10.2656L12.6196 9.70312L12.7603 8.85938C12.8071 8.625 12.854 8.34375 12.854 8.0625C12.854 7.82812 12.8071 7.54688 12.7603 7.3125L12.6196 6.46875L13.229 5.90625L13.9321 5.29688L13.5571 4.64062ZM8.354 9.1875C8.96338 9.1875 9.479 8.71875 9.479 8.0625C9.479 7.45312 8.96338 6.9375 8.354 6.9375C7.69775 6.9375 7.229 7.45312 7.229 8.0625C7.229 8.71875 7.69775 9.1875 8.354 9.1875ZM5.729 8.0625C5.729 7.125 6.19775 6.28125 7.0415 5.8125C7.83838 5.34375 8.82275 5.34375 9.6665 5.8125C10.4634 6.28125 10.979 7.125 10.979 8.0625C10.979 9.04688 10.4634 9.89062 9.6665 10.3594C8.82275 10.8281 7.83838 10.8281 7.0415 10.3594C6.19775 9.89062 5.729 9.04688 5.729 8.0625ZM16.979 14.2031C17.2134 13.5938 17.5415 12.9844 18.0103 12.4688L17.354 10.4531L20.1196 8.8125L21.5259 10.4062C21.854 10.3594 22.229 10.3125 22.604 10.3125C22.9321 10.3125 23.3071 10.3594 23.6353 10.4062L25.0415 8.8125L27.854 10.4531L27.1509 12.4688C27.6196 12.9844 27.9478 13.5938 28.1821 14.2031L30.479 14.6719V17.9531L28.1821 18.4219C27.9478 19.0781 27.6196 19.6875 27.1509 20.2031L27.854 22.2188L25.0415 23.8125L23.6353 22.2656C23.3071 22.3125 22.9321 22.3125 22.604 22.3125C22.229 22.3125 21.9009 22.3125 21.5259 22.2656L20.1196 23.8125L17.354 22.2188L18.0103 20.2031C17.5415 19.6875 17.2134 19.0781 16.979 18.4219L14.729 17.9531V14.6719L16.979 14.2031ZM19.1353 11.1094L19.4165 12L19.6978 12.7969L19.1353 13.4531C18.8071 13.8281 18.5728 14.25 18.3853 14.7656L18.0571 15.5156L17.2603 15.7031L16.229 15.8906V16.7344L17.2603 16.9688L18.104 17.1562L18.3853 17.9062C18.5728 18.4219 18.8071 18.8438 19.1353 19.2188L19.6978 19.875L19.4165 20.6719L19.1353 21.5156L19.7915 21.9375L20.4009 21.2344L20.9634 20.625L21.8071 20.7656C22.0415 20.8125 22.3228 20.8594 22.604 20.8594C22.8384 20.8594 23.1196 20.8125 23.354 20.7656L24.1978 20.625L24.7603 21.2344L25.3696 21.9375L26.0259 21.5156L25.7446 20.6719L25.4634 19.875L26.0259 19.2188C26.354 18.8438 26.6353 18.4219 26.7759 17.9062L27.104 17.1562L27.9009 16.9688L28.979 16.7344V15.8906L27.9009 15.7031L27.104 15.5156L26.7759 14.7656C26.5884 14.25 26.354 13.8281 26.0259 13.4531L25.4634 12.7969L25.7446 12L26.0259 11.1094L25.3696 10.7344L24.7603 11.4375L24.1978 12.0469L23.354 11.9062C23.1196 11.8594 22.8384 11.8125 22.604 11.8125C22.3228 11.8125 22.0415 11.8594 21.8071 11.9062L20.9634 12.0469L20.4009 11.4375L19.7915 10.7344L19.1353 11.1094ZM23.729 16.3125C23.729 15.7031 23.2134 15.1875 22.604 15.1875C21.9478 15.1875 21.479 15.7031 21.479 16.3125C21.479 16.9688 21.9478 17.4375 22.604 17.4375C23.2134 17.4375 23.729 16.9688 23.729 16.3125ZM22.604 18.9375C21.6196 18.9375 20.7759 18.4688 20.3071 17.625C19.8384 16.8281 19.8384 15.8438 20.3071 15C20.7759 14.2031 21.6196 13.6875 22.604 13.6875C23.5415 13.6875 24.3853 14.2031 24.854 15C25.3228 15.8438 25.3228 16.8281 24.854 17.625C24.3853 18.4688 23.5415 18.9375 22.604 18.9375Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">CMS Migration</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.3335 1.5C9.53662 1.5 6.11475 3.51562 4.23975 6.75C2.31787 10.0312 2.31787 14.0156 4.23975 17.25C6.11475 20.5312 9.53662 22.5 13.3335 22.5C17.0835 22.5 20.5054 20.5312 22.3804 17.25C24.3022 14.0156 24.3022 10.0312 22.3804 6.75C20.5054 3.51562 17.0835 1.5 13.3335 1.5ZM13.3335 24C9.021 24 5.0835 21.75 2.92725 18C0.770996 14.2969 0.770996 9.75 2.92725 6C5.0835 2.29688 9.021 0 13.3335 0C17.5991 0 21.5366 2.29688 23.6929 6C25.8491 9.75 25.8491 14.2969 23.6929 18C21.5366 21.75 17.5991 24 13.3335 24ZM12.5835 6.75C12.5835 7.17188 12.9116 7.5 13.3335 7.5C13.7085 7.5 14.0835 7.17188 14.0835 6.75C14.0835 6.375 13.7085 6 13.3335 6C12.9116 6 12.5835 6.375 12.5835 6.75ZM15.5835 6.75C15.5835 7.59375 15.1147 8.29688 14.4585 8.71875C13.7554 9.14062 12.8647 9.14062 12.2085 8.71875C11.5054 8.29688 11.0835 7.59375 11.0835 6.75C11.0835 5.95312 11.5054 5.25 12.2085 4.82812C12.8647 4.40625 13.7554 4.40625 14.4585 4.82812C15.1147 5.25 15.5835 5.95312 15.5835 6.75ZM7.66162 8.76562L8.36475 9.09375L11.5991 10.5H12.5835H14.0835H15.021L18.2554 9.09375L18.9585 8.76562L19.5679 10.1719L18.8647 10.4531L15.5835 11.9062V14.9531L16.2866 18.6094L16.4272 19.3594L14.9741 19.6406L14.8335 18.9375L14.1772 15.75H12.4429L11.7866 18.9375L11.646 19.6406L10.1929 19.3594L10.3335 18.6094L11.0835 14.9531V11.9062L7.75537 10.4531L7.05225 10.1719L7.66162 8.76562ZM12.5835 12V14.25H14.0835V12H12.5835Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Accessibility & Compliance</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="sboxbg spaceTB carddesign" id="card3">
+            <div class="container">
+               <div class="sboxbg_color sboxbg_color2">
+                  <div class="row">
+                     <div class="col-sm-6 col-oRder-1">
+                        <div class="heading">
+                           <h2>Development</h2>
+                           <p>You need a digital foundation that fosters your growth, not one that hinders it. We create robust, scaleable, and intuitive solutions that empower you for growth and can adapt alongside you as your business evolves.</p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-oRder-2">
+                        <div class="ssimage">
+                           <img src="img/developmetnimg.png" alt="">
+                        </div>
+                     </div>
+                     <div class="col-sm-12 col-oRder-3">
+                        <div class="subserv">
+                           <h4>Our Development Expertise</h4>
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M2.85938 7.96875C2.29688 9.1875 2.01562 10.5938 2.01562 12C2.01562 15.9844 4.3125 19.3594 7.64062 21L2.85938 7.96875ZM18.7031 11.5312C18.7031 12.375 18.375 13.3594 17.9531 14.7188L16.9688 18.0469L13.3594 7.35938C13.9688 7.3125 14.4844 7.26562 14.4844 7.26562C15.0469 7.17188 14.9531 6.375 14.4375 6.42188C14.4375 6.42188 12.7969 6.5625 11.7656 6.5625C10.7812 6.5625 9.14062 6.42188 9.14062 6.42188C8.625 6.375 8.53125 7.21875 9.09375 7.26562C9.09375 7.26562 9.60938 7.3125 10.125 7.35938L11.6719 11.5781L9.51562 18.1406L5.85938 7.35938C6.46875 7.3125 7.03125 7.26562 7.03125 7.26562C7.54688 7.17188 7.5 6.375 6.9375 6.42188C6.9375 6.42188 5.34375 6.5625 4.26562 6.5625C4.07812 6.5625 3.89062 6.5625 3.65625 6.5625C5.4375 3.84375 8.48438 2.0625 12 2.0625C14.5781 2.0625 16.9219 3.04688 18.7031 4.6875C18.6562 4.64062 18.6094 4.64062 18.5625 4.64062C17.625 4.64062 16.9219 5.53125 16.9219 6.42188C16.9219 7.26562 17.3906 7.96875 17.9062 8.76562C18.2812 9.42188 18.7031 10.2656 18.7031 11.5312ZM12.1406 12.8906L15.2344 21.2812C15.2344 21.3281 15.2812 21.375 15.2812 21.4219C14.25 21.7969 13.125 21.9844 12 21.9844C11.0156 21.9844 10.0781 21.8438 9.14062 21.6094L12.1406 12.8906ZM20.7188 7.21875C21.5156 8.67188 21.9375 10.2656 21.9375 12C21.9375 15.7031 19.9688 18.8906 16.9688 20.625L20.0156 11.8125C20.625 10.4062 20.8125 9.28125 20.8125 8.25C20.8125 7.875 20.7656 7.54688 20.7188 7.21875ZM23.625 12C23.625 5.625 18.375 0.375 12 0.375C5.57812 0.375 0.375 5.625 0.375 12C0.375 18.4219 5.57812 23.625 12 23.625C18.375 23.625 23.625 18.4219 23.625 12ZM23.0625 12C23.0625 18.1406 18.0938 23.1094 12 23.1094C5.85938 23.1094 0.890625 18.1406 0.890625 12C0.890625 5.90625 5.85938 0.9375 12 0.9375C18.0938 0.9375 23.0625 5.90625 23.0625 12Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">WordPress Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2230_31821)"> <path d="M23.6502 5.47993V5.42993L23.5902 5.36993L23.5502 5.32993V5.29993L23.4502 5.23993L18.9502 2.65993H18.9302L18.9102 2.63993C18.7402 2.57993 18.5402 2.56993 18.3802 2.64993L13.8802 5.22993H13.8602L13.8402 5.25993C13.8402 5.25993 13.8302 5.25993 13.8202 5.25993C13.7902 5.27993 13.7802 5.29993 13.7702 5.31993C13.7502 5.32993 13.7302 5.34993 13.7102 5.36993C13.7102 5.36993 13.7102 5.37993 13.7102 5.38993C13.7102 5.38993 13.7102 5.38993 13.7002 5.39993C13.6902 5.40993 13.6702 5.42993 13.6602 5.45993C13.6302 5.51993 13.6302 5.58993 13.6302 5.59993V5.61993V5.63993V5.65993V5.67993V5.69993V5.71993V10.5799L10.2302 12.5099V3.16993V3.14993V3.12993V3.10993V3.08993V3.06993V3.04993V2.99993H10.1502C10.2036 2.99993 10.2302 2.99993 10.2302 2.99993C10.2302 2.99993 10.2302 2.98993 10.2302 2.97993C10.2302 2.95993 10.2302 2.93993 10.2102 2.90993C10.2102 2.90993 10.2002 2.89993 10.1902 2.88993V2.72993H10.1402V2.67993H10.0002C10.0002 2.67993 9.93023 2.63993 9.91023 2.63993L5.36023 0.0899347C5.18023 -0.0500653 4.96023 -0.0200653 4.79023 0.0899347L0.300234 2.65993C0.290234 2.65993 0.280234 2.65993 0.270234 2.65993C0.270234 2.65993 0.260234 2.66993 0.250234 2.67993H0.0902344V2.72993H0.0402344V2.81993H-0.00976562V3.06993V3.08993V3.10993V3.12993V3.14993V3.16993V3.18993V18.6599C-0.00976562 18.7499 0.0102344 18.8499 0.0602344 18.9399C0.110234 19.0299 0.180234 19.0999 0.270234 19.1599H0.280234L9.26023 24.2999C9.26023 24.2999 9.26023 24.2999 9.28023 24.3099C9.29023 24.3199 9.31023 24.3399 9.34023 24.3499C9.39023 24.3799 9.44023 24.3799 9.46023 24.3799C9.50023 24.3999 9.54023 24.4199 9.59023 24.4199C9.64023 24.4199 9.69023 24.4099 9.73023 24.3799C9.73023 24.3799 9.74023 24.3799 9.75023 24.3799C9.77023 24.3799 9.79023 24.3799 9.82023 24.3599C9.85023 24.3399 9.88023 24.3199 9.91023 24.2799L18.9002 19.1599H18.9202L18.9402 19.1299C19.0202 19.0499 19.1902 18.8999 19.1902 18.6599V13.8099L23.4002 11.3799C23.6302 11.2799 23.6902 11.0399 23.6902 10.8799V5.71993V5.69993V5.67993V5.65993V5.63993V5.61993V5.59993V5.50993L23.6402 5.45993L23.6502 5.47993ZM22.5502 10.5599L19.2002 12.4899V8.63994L21.3002 7.47993L22.5402 6.71993V10.5599H22.5502ZM5.08023 1.24993L8.43023 3.17993L5.08023 5.10993L1.73023 3.17993L5.08023 1.24993ZM9.00023 13.1399L6.94023 14.3499L5.65023 15.0699V6.09993L9.00023 4.16993V13.1299V13.1399ZM1.15023 4.16993L2.44023 4.88993L4.50023 6.09993V16.1599C4.50023 16.1599 4.51023 16.2599 4.54023 16.2999V16.3299L4.59023 16.3799L4.75023 16.5399L4.77023 16.5599C4.78023 16.5599 4.79023 16.5599 4.80023 16.5599L9.00023 18.9299V22.8299L1.15023 18.2799V4.16993ZM10.1502 18.9399L18.0502 14.4799V18.2899L10.1502 22.8399V18.9399ZM9.86023 13.9899L14.1202 11.5599L17.4602 13.4799L15.0002 14.8499L9.57023 17.9399L6.23023 16.0599L9.86023 13.9899ZM9.77024 13.8299V13.8099H9.76023V13.8299H9.77024ZM15.9402 7.46993L18.0402 8.62994V12.4699L16.7502 11.7099L14.7002 10.5499V6.70993L15.9402 7.45993V7.46993ZM18.6202 7.66993L15.2702 5.69993L18.6202 3.76993L21.9702 5.69993L18.6202 7.66993Z" fill="#2286E3"></path> </g> <defs> <clipPath id="clip0_2230_31821"> <rect width="23.7" height="24.41" fill="white"></rect> </clipPath> </defs> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Laravel App Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <mask id="path-1-outside-1_2141_6328" maskUnits="userSpaceOnUse" x="-0.166504" y="0" width="27" height="19" fill="black"> <rect fill="white" x="-0.166504" width="27" height="19"></rect> <path d="M22.0835 9.65625V8.95312V8.60156C22.0835 6.33594 20.2476 4.53906 18.021 4.53906C17.4741 4.53906 16.9663 4.61719 16.5366 4.8125L15.5601 5.16406L15.0132 4.30469C14.1147 2.9375 12.5913 2 10.8335 2C8.06006 2 5.8335 4.26562 5.8335 7V7.35156V8.21094L4.97412 8.52344C3.29443 9.10938 2.0835 10.75 2.0835 12.625V17H6.4585H20.8335H24.5835V13.25C24.5835 11.8828 23.8022 10.6719 22.7085 10.0078L22.0835 9.65625ZM4.5835 7.35156V7C4.5835 3.5625 7.35693 0.75 10.8335 0.75C13.021 0.75 14.9741 1.92188 16.0679 3.64062C16.6538 3.40625 17.3179 3.25 18.021 3.25C20.9507 3.25 23.3335 5.63281 23.3335 8.5625V8.95312C24.8179 9.8125 25.8335 11.4141 25.8335 13.25V17V18.25H24.5835H20.8335H6.4585H2.0835H0.833496V17V12.625C0.833496 10.2031 2.396 8.09375 4.5835 7.35156Z"></path> </mask> <path d="M22.0835 9.65625V8.95312V8.60156C22.0835 6.33594 20.2476 4.53906 18.021 4.53906C17.4741 4.53906 16.9663 4.61719 16.5366 4.8125L15.5601 5.16406L15.0132 4.30469C14.1147 2.9375 12.5913 2 10.8335 2C8.06006 2 5.8335 4.26562 5.8335 7V7.35156V8.21094L4.97412 8.52344C3.29443 9.10938 2.0835 10.75 2.0835 12.625V17H6.4585H20.8335H24.5835V13.25C24.5835 11.8828 23.8022 10.6719 22.7085 10.0078L22.0835 9.65625ZM4.5835 7.35156V7C4.5835 3.5625 7.35693 0.75 10.8335 0.75C13.021 0.75 14.9741 1.92188 16.0679 3.64062C16.6538 3.40625 17.3179 3.25 18.021 3.25C20.9507 3.25 23.3335 5.63281 23.3335 8.5625V8.95312C24.8179 9.8125 25.8335 11.4141 25.8335 13.25V17V18.25H24.5835H20.8335H6.4585H2.0835H0.833496V17V12.625C0.833496 10.2031 2.396 8.09375 4.5835 7.35156Z" fill="#2286E3"></path> <path d="M22.0835 9.65625H21.8835V9.77322L21.9854 9.83057L22.0835 9.65625ZM16.5366 4.8125L16.6044 5.00068L16.612 4.99793L16.6194 4.99457L16.5366 4.8125ZM15.5601 5.16406L15.3913 5.27144L15.4772 5.40644L15.6278 5.35224L15.5601 5.16406ZM15.0132 4.30469L15.1819 4.1973L15.1803 4.19485L15.0132 4.30469ZM5.8335 8.21094L5.90184 8.3989L6.0335 8.35102V8.21094H5.8335ZM4.97412 8.52344L5.04 8.71229L5.04247 8.7114L4.97412 8.52344ZM2.0835 17H1.8835V17.2H2.0835V17ZM24.5835 17V17.2H24.7835V17H24.5835ZM22.7085 10.0078L22.8123 9.83676L22.8065 9.8335L22.7085 10.0078ZM4.5835 7.35156L4.64776 7.54096L4.7835 7.4949V7.35156H4.5835ZM16.0679 3.64062L15.8991 3.748L15.9882 3.88791L16.1421 3.82632L16.0679 3.64062ZM23.3335 8.95312H23.1335V9.06844L23.2333 9.12621L23.3335 8.95312ZM25.8335 18.25V18.45H26.0335V18.25H25.8335ZM0.833496 18.25H0.633496V18.45H0.833496V18.25ZM22.2835 9.65625V8.95312H21.8835V9.65625H22.2835ZM22.2835 8.95312V8.60156H21.8835V8.95312H22.2835ZM22.2835 8.60156C22.2835 6.22423 20.3568 4.33906 18.021 4.33906V4.73906C20.1384 4.73906 21.8835 6.44765 21.8835 8.60156H22.2835ZM18.021 4.33906C17.4571 4.33906 16.9183 4.41933 16.4539 4.63043L16.6194 4.99457C17.0143 4.81505 17.4912 4.73906 18.021 4.73906V4.33906ZM16.4689 4.62432L15.4923 4.97589L15.6278 5.35224L16.6044 5.00068L16.4689 4.62432ZM15.7288 5.05669L15.1819 4.19731L14.8445 4.41206L15.3913 5.27144L15.7288 5.05669ZM15.1803 4.19485C14.2487 2.77713 12.6652 1.8 10.8335 1.8V2.2C12.5174 2.2 13.9808 3.09787 14.846 4.41452L15.1803 4.19485ZM10.8335 1.8C7.94859 1.8 5.6335 4.15619 5.6335 7H6.0335C6.0335 4.37506 8.17153 2.2 10.8335 2.2V1.8ZM5.6335 7V7.35156H6.0335V7H5.6335ZM5.6335 7.35156V8.21094H6.0335V7.35156H5.6335ZM5.76515 8.02298L4.90577 8.33548L5.04247 8.7114L5.90184 8.3989L5.76515 8.02298ZM4.90825 8.3346C3.14907 8.94826 1.8835 10.6641 1.8835 12.625H2.2835C2.2835 10.8359 3.4398 9.27049 5.04 8.71228L4.90825 8.3346ZM1.8835 12.625V17H2.2835V12.625H1.8835ZM2.0835 17.2H6.4585V16.8H2.0835V17.2ZM6.4585 17.2H20.8335V16.8H6.4585V17.2ZM20.8335 17.2H24.5835V16.8H20.8335V17.2ZM24.7835 17V13.25H24.3835V17H24.7835ZM24.7835 13.25C24.7835 11.8054 23.959 10.5331 22.8123 9.83685L22.6047 10.1788C23.6455 10.8107 24.3835 11.9602 24.3835 13.25H24.7835ZM22.8065 9.8335L22.1815 9.48193L21.9854 9.83057L22.6104 10.1821L22.8065 9.8335ZM4.7835 7.35156V7H4.3835V7.35156H4.7835ZM4.7835 7C4.7835 3.67214 7.4682 0.95 10.8335 0.95V0.55C7.24566 0.55 4.3835 3.45286 4.3835 7H4.7835ZM10.8335 0.95C12.9489 0.95 14.84 2.08372 15.8991 3.748L16.2366 3.53325C15.1082 1.76003 13.0931 0.55 10.8335 0.55V0.95ZM16.1421 3.82632C16.7086 3.59974 17.3474 3.45 18.021 3.45V3.05C17.2883 3.05 16.599 3.21276 15.9936 3.45493L16.1421 3.82632ZM18.021 3.45C20.8402 3.45 23.1335 5.74327 23.1335 8.5625H23.5335C23.5335 5.52236 21.0611 3.05 18.021 3.05V3.45ZM23.1335 8.5625V8.95312H23.5335V8.5625H23.1335ZM23.2333 9.12621C24.6598 9.95209 25.6335 11.4898 25.6335 13.25H26.0335C26.0335 11.3383 24.9759 9.67291 23.4337 8.78004L23.2333 9.12621ZM25.6335 13.25V17H26.0335V13.25H25.6335ZM25.6335 17V18.25H26.0335V17H25.6335ZM25.8335 18.05H24.5835V18.45H25.8335V18.05ZM24.5835 18.05H20.8335V18.45H24.5835V18.05ZM20.8335 18.05H6.4585V18.45H20.8335V18.05ZM6.4585 18.05H2.0835V18.45H6.4585V18.05ZM2.0835 18.05H0.833496V18.45H2.0835V18.05ZM1.0335 18.25V17H0.633496V18.25H1.0335ZM1.0335 17V12.625H0.633496V17H1.0335ZM1.0335 12.625C1.0335 10.2894 2.54081 8.25581 4.64776 7.54096L4.51924 7.16217C2.25118 7.93169 0.633496 10.1168 0.633496 12.625H1.0335Z" fill="#2286E3" mask="url(#path-1-outside-1_2141_6328)"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">APIs & Integrations</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.4559 19.2294C21.1368 19.2294 21.7536 18.5046 21.7536 16.7312V13.277C21.7536 11.6269 22.5555 10.6863 23.3265 10.2391C23.5578 10.1003 23.5578 9.77645 23.3265 9.62224C22.5246 9.11336 21.7536 8.04933 21.7536 6.63062V3.23807C21.7536 1.3259 21.2293 0.770752 19.5484 0.770752H4.45156C2.7707 0.770752 2.2464 1.3259 2.2464 3.23807V6.63062C2.2464 8.04933 1.47536 9.11336 0.673483 9.62224C0.442172 9.76103 0.442172 10.1003 0.673483 10.2391C1.44452 10.6709 2.2464 11.6115 2.2464 13.277V16.7312C2.2464 18.5046 2.86322 19.2294 4.54408 19.2294H19.4559ZM11.9614 16.0681C10.1572 16.0681 8.84646 15.5284 7.62823 14.4644C7.42776 14.2793 7.35065 14.048 7.35065 13.8167C7.35065 13.6316 7.39692 13.4312 7.5357 13.277L7.9058 12.7989C8.09085 12.5676 8.29132 12.4597 8.52263 12.4597C8.78478 12.4597 9.03151 12.5676 9.29366 12.7372C10.1264 13.277 11.0516 13.5854 12.1619 13.5854C13.0101 13.5854 13.6886 13.2307 13.6886 12.5059C13.6886 10.6246 7.42776 11.6578 7.42776 7.4325C7.42776 5.16566 9.27824 3.90116 11.6839 3.90116C13.3802 3.90116 14.6292 4.39462 15.5545 4.98061C15.7858 5.13482 15.94 5.44323 15.94 5.75164C15.94 5.93669 15.8937 6.10632 15.7858 6.26053L15.5082 6.67689C15.3077 6.95446 15.0764 7.09325 14.7834 7.09325C14.583 7.09325 14.3671 7.01614 14.1358 6.9082C13.4418 6.55352 12.7171 6.36847 11.8381 6.36847C10.9283 6.36847 10.3885 6.86194 10.3885 7.37082C10.3885 9.29841 16.6493 8.2498 16.6493 12.3517C16.6493 14.6494 14.7989 16.0681 11.9614 16.0681Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Statamic Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.4634 2.48438C11.0728 2.71875 11.6821 3.04688 12.1978 3.51562L14.2134 2.8125L15.854 5.625L14.2603 7.03125C14.3071 7.35938 14.354 7.73438 14.354 8.0625C14.354 8.4375 14.3071 8.76562 14.2603 9.14062L15.854 10.5469L14.2134 13.3125L12.1978 12.6562C11.6821 13.125 11.0728 13.4531 10.4634 13.6875L9.99463 15.9375H6.71338L6.24463 13.6875C5.58838 13.4531 4.979 13.125 4.46338 12.6562L2.44775 13.3125L0.854004 10.5469L2.40088 9.14062C2.354 8.8125 2.354 8.4375 2.354 8.0625C2.354 7.73438 2.354 7.35938 2.40088 7.03125L0.854004 5.625L2.44775 2.8125L4.46338 3.51562C4.979 3.04688 5.58838 2.71875 6.24463 2.48438L6.71338 0.1875H9.99463L10.4634 2.48438ZM13.5571 4.64062L12.6665 4.92188L11.8696 5.20312L11.2134 4.64062C10.8384 4.3125 10.4165 4.03125 9.90088 3.89062L9.15088 3.5625L8.96338 2.76562L8.77588 1.6875H7.93213L7.69775 2.76562L7.51025 3.5625L6.76025 3.89062C6.24463 4.07812 5.82275 4.3125 5.44775 4.64062L4.7915 5.20312L3.99463 4.92188L3.15088 4.64062L2.729 5.29688L3.43213 5.90625L4.0415 6.46875L3.90088 7.3125C3.854 7.54688 3.80713 7.82812 3.80713 8.0625C3.80713 8.34375 3.854 8.625 3.90088 8.85938L4.0415 9.70312L3.43213 10.2656L2.729 10.875L3.15088 11.5312L3.99463 11.25L4.7915 10.9688L5.44775 11.5312C5.82275 11.8594 6.24463 12.0938 6.76025 12.2812L7.51025 12.6094L7.69775 13.4062L7.93213 14.4375H8.77588L8.96338 13.4062L9.15088 12.5625L9.90088 12.2812C10.4165 12.0938 10.8384 11.8594 11.2134 11.5312L11.8696 10.9688L12.6665 11.25L13.5571 11.5312L13.9321 10.875L13.229 10.2656L12.6196 9.70312L12.7603 8.85938C12.8071 8.625 12.854 8.34375 12.854 8.0625C12.854 7.82812 12.8071 7.54688 12.7603 7.3125L12.6196 6.46875L13.229 5.90625L13.9321 5.29688L13.5571 4.64062ZM8.354 9.1875C8.96338 9.1875 9.479 8.71875 9.479 8.0625C9.479 7.45312 8.96338 6.9375 8.354 6.9375C7.69775 6.9375 7.229 7.45312 7.229 8.0625C7.229 8.71875 7.69775 9.1875 8.354 9.1875ZM5.729 8.0625C5.729 7.125 6.19775 6.28125 7.0415 5.8125C7.83838 5.34375 8.82275 5.34375 9.6665 5.8125C10.4634 6.28125 10.979 7.125 10.979 8.0625C10.979 9.04688 10.4634 9.89062 9.6665 10.3594C8.82275 10.8281 7.83838 10.8281 7.0415 10.3594C6.19775 9.89062 5.729 9.04688 5.729 8.0625ZM16.979 14.2031C17.2134 13.5938 17.5415 12.9844 18.0103 12.4688L17.354 10.4531L20.1196 8.8125L21.5259 10.4062C21.854 10.3594 22.229 10.3125 22.604 10.3125C22.9321 10.3125 23.3071 10.3594 23.6353 10.4062L25.0415 8.8125L27.854 10.4531L27.1509 12.4688C27.6196 12.9844 27.9478 13.5938 28.1821 14.2031L30.479 14.6719V17.9531L28.1821 18.4219C27.9478 19.0781 27.6196 19.6875 27.1509 20.2031L27.854 22.2188L25.0415 23.8125L23.6353 22.2656C23.3071 22.3125 22.9321 22.3125 22.604 22.3125C22.229 22.3125 21.9009 22.3125 21.5259 22.2656L20.1196 23.8125L17.354 22.2188L18.0103 20.2031C17.5415 19.6875 17.2134 19.0781 16.979 18.4219L14.729 17.9531V14.6719L16.979 14.2031ZM19.1353 11.1094L19.4165 12L19.6978 12.7969L19.1353 13.4531C18.8071 13.8281 18.5728 14.25 18.3853 14.7656L18.0571 15.5156L17.2603 15.7031L16.229 15.8906V16.7344L17.2603 16.9688L18.104 17.1562L18.3853 17.9062C18.5728 18.4219 18.8071 18.8438 19.1353 19.2188L19.6978 19.875L19.4165 20.6719L19.1353 21.5156L19.7915 21.9375L20.4009 21.2344L20.9634 20.625L21.8071 20.7656C22.0415 20.8125 22.3228 20.8594 22.604 20.8594C22.8384 20.8594 23.1196 20.8125 23.354 20.7656L24.1978 20.625L24.7603 21.2344L25.3696 21.9375L26.0259 21.5156L25.7446 20.6719L25.4634 19.875L26.0259 19.2188C26.354 18.8438 26.6353 18.4219 26.7759 17.9062L27.104 17.1562L27.9009 16.9688L28.979 16.7344V15.8906L27.9009 15.7031L27.104 15.5156L26.7759 14.7656C26.5884 14.25 26.354 13.8281 26.0259 13.4531L25.4634 12.7969L25.7446 12L26.0259 11.1094L25.3696 10.7344L24.7603 11.4375L24.1978 12.0469L23.354 11.9062C23.1196 11.8594 22.8384 11.8125 22.604 11.8125C22.3228 11.8125 22.0415 11.8594 21.8071 11.9062L20.9634 12.0469L20.4009 11.4375L19.7915 10.7344L19.1353 11.1094ZM23.729 16.3125C23.729 15.7031 23.2134 15.1875 22.604 15.1875C21.9478 15.1875 21.479 15.7031 21.479 16.3125C21.479 16.9688 21.9478 17.4375 22.604 17.4375C23.2134 17.4375 23.729 16.9688 23.729 16.3125ZM22.604 18.9375C21.6196 18.9375 20.7759 18.4688 20.3071 17.625C19.8384 16.8281 19.8384 15.8438 20.3071 15C20.7759 14.2031 21.6196 13.6875 22.604 13.6875C23.5415 13.6875 24.3853 14.2031 24.854 15C25.3228 15.8438 25.3228 16.8281 24.854 17.625C24.3853 18.4688 23.5415 18.9375 22.604 18.9375Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">CMS Migration</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.3335 1.5C9.53662 1.5 6.11475 3.51562 4.23975 6.75C2.31787 10.0312 2.31787 14.0156 4.23975 17.25C6.11475 20.5312 9.53662 22.5 13.3335 22.5C17.0835 22.5 20.5054 20.5312 22.3804 17.25C24.3022 14.0156 24.3022 10.0312 22.3804 6.75C20.5054 3.51562 17.0835 1.5 13.3335 1.5ZM13.3335 24C9.021 24 5.0835 21.75 2.92725 18C0.770996 14.2969 0.770996 9.75 2.92725 6C5.0835 2.29688 9.021 0 13.3335 0C17.5991 0 21.5366 2.29688 23.6929 6C25.8491 9.75 25.8491 14.2969 23.6929 18C21.5366 21.75 17.5991 24 13.3335 24ZM12.5835 6.75C12.5835 7.17188 12.9116 7.5 13.3335 7.5C13.7085 7.5 14.0835 7.17188 14.0835 6.75C14.0835 6.375 13.7085 6 13.3335 6C12.9116 6 12.5835 6.375 12.5835 6.75ZM15.5835 6.75C15.5835 7.59375 15.1147 8.29688 14.4585 8.71875C13.7554 9.14062 12.8647 9.14062 12.2085 8.71875C11.5054 8.29688 11.0835 7.59375 11.0835 6.75C11.0835 5.95312 11.5054 5.25 12.2085 4.82812C12.8647 4.40625 13.7554 4.40625 14.4585 4.82812C15.1147 5.25 15.5835 5.95312 15.5835 6.75ZM7.66162 8.76562L8.36475 9.09375L11.5991 10.5H12.5835H14.0835H15.021L18.2554 9.09375L18.9585 8.76562L19.5679 10.1719L18.8647 10.4531L15.5835 11.9062V14.9531L16.2866 18.6094L16.4272 19.3594L14.9741 19.6406L14.8335 18.9375L14.1772 15.75H12.4429L11.7866 18.9375L11.646 19.6406L10.1929 19.3594L10.3335 18.6094L11.0835 14.9531V11.9062L7.75537 10.4531L7.05225 10.1719L7.66162 8.76562ZM12.5835 12V14.25H14.0835V12H12.5835Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Accessibility & Compliance</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="sboxbg spaceTB carddesign" id="card4">
+            <div class="container">
+               <div class="sboxbg_color sboxbg_color2">
+                  <div class="row">
+                     <div class="col-sm-6 col-oRder-1">
+                        <div class="heading">
+                           <h2>Development</h2>
+                           <p>You need a digital foundation that fosters your growth, not one that hinders it. We create robust, scaleable, and intuitive solutions that empower you for growth and can adapt alongside you as your business evolves.</p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-oRder-2">
+                        <div class="ssimage">
+                           <img src="img/developmetnimg.png" alt="">
+                        </div>
+                     </div>
+                     <div class="col-sm-12 col-oRder-3">
+                        <div class="subserv">
+                           <h4>Our Development Expertise</h4>
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M2.85938 7.96875C2.29688 9.1875 2.01562 10.5938 2.01562 12C2.01562 15.9844 4.3125 19.3594 7.64062 21L2.85938 7.96875ZM18.7031 11.5312C18.7031 12.375 18.375 13.3594 17.9531 14.7188L16.9688 18.0469L13.3594 7.35938C13.9688 7.3125 14.4844 7.26562 14.4844 7.26562C15.0469 7.17188 14.9531 6.375 14.4375 6.42188C14.4375 6.42188 12.7969 6.5625 11.7656 6.5625C10.7812 6.5625 9.14062 6.42188 9.14062 6.42188C8.625 6.375 8.53125 7.21875 9.09375 7.26562C9.09375 7.26562 9.60938 7.3125 10.125 7.35938L11.6719 11.5781L9.51562 18.1406L5.85938 7.35938C6.46875 7.3125 7.03125 7.26562 7.03125 7.26562C7.54688 7.17188 7.5 6.375 6.9375 6.42188C6.9375 6.42188 5.34375 6.5625 4.26562 6.5625C4.07812 6.5625 3.89062 6.5625 3.65625 6.5625C5.4375 3.84375 8.48438 2.0625 12 2.0625C14.5781 2.0625 16.9219 3.04688 18.7031 4.6875C18.6562 4.64062 18.6094 4.64062 18.5625 4.64062C17.625 4.64062 16.9219 5.53125 16.9219 6.42188C16.9219 7.26562 17.3906 7.96875 17.9062 8.76562C18.2812 9.42188 18.7031 10.2656 18.7031 11.5312ZM12.1406 12.8906L15.2344 21.2812C15.2344 21.3281 15.2812 21.375 15.2812 21.4219C14.25 21.7969 13.125 21.9844 12 21.9844C11.0156 21.9844 10.0781 21.8438 9.14062 21.6094L12.1406 12.8906ZM20.7188 7.21875C21.5156 8.67188 21.9375 10.2656 21.9375 12C21.9375 15.7031 19.9688 18.8906 16.9688 20.625L20.0156 11.8125C20.625 10.4062 20.8125 9.28125 20.8125 8.25C20.8125 7.875 20.7656 7.54688 20.7188 7.21875ZM23.625 12C23.625 5.625 18.375 0.375 12 0.375C5.57812 0.375 0.375 5.625 0.375 12C0.375 18.4219 5.57812 23.625 12 23.625C18.375 23.625 23.625 18.4219 23.625 12ZM23.0625 12C23.0625 18.1406 18.0938 23.1094 12 23.1094C5.85938 23.1094 0.890625 18.1406 0.890625 12C0.890625 5.90625 5.85938 0.9375 12 0.9375C18.0938 0.9375 23.0625 5.90625 23.0625 12Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">WordPress Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2230_31821)"> <path d="M23.6502 5.47993V5.42993L23.5902 5.36993L23.5502 5.32993V5.29993L23.4502 5.23993L18.9502 2.65993H18.9302L18.9102 2.63993C18.7402 2.57993 18.5402 2.56993 18.3802 2.64993L13.8802 5.22993H13.8602L13.8402 5.25993C13.8402 5.25993 13.8302 5.25993 13.8202 5.25993C13.7902 5.27993 13.7802 5.29993 13.7702 5.31993C13.7502 5.32993 13.7302 5.34993 13.7102 5.36993C13.7102 5.36993 13.7102 5.37993 13.7102 5.38993C13.7102 5.38993 13.7102 5.38993 13.7002 5.39993C13.6902 5.40993 13.6702 5.42993 13.6602 5.45993C13.6302 5.51993 13.6302 5.58993 13.6302 5.59993V5.61993V5.63993V5.65993V5.67993V5.69993V5.71993V10.5799L10.2302 12.5099V3.16993V3.14993V3.12993V3.10993V3.08993V3.06993V3.04993V2.99993H10.1502C10.2036 2.99993 10.2302 2.99993 10.2302 2.99993C10.2302 2.99993 10.2302 2.98993 10.2302 2.97993C10.2302 2.95993 10.2302 2.93993 10.2102 2.90993C10.2102 2.90993 10.2002 2.89993 10.1902 2.88993V2.72993H10.1402V2.67993H10.0002C10.0002 2.67993 9.93023 2.63993 9.91023 2.63993L5.36023 0.0899347C5.18023 -0.0500653 4.96023 -0.0200653 4.79023 0.0899347L0.300234 2.65993C0.290234 2.65993 0.280234 2.65993 0.270234 2.65993C0.270234 2.65993 0.260234 2.66993 0.250234 2.67993H0.0902344V2.72993H0.0402344V2.81993H-0.00976562V3.06993V3.08993V3.10993V3.12993V3.14993V3.16993V3.18993V18.6599C-0.00976562 18.7499 0.0102344 18.8499 0.0602344 18.9399C0.110234 19.0299 0.180234 19.0999 0.270234 19.1599H0.280234L9.26023 24.2999C9.26023 24.2999 9.26023 24.2999 9.28023 24.3099C9.29023 24.3199 9.31023 24.3399 9.34023 24.3499C9.39023 24.3799 9.44023 24.3799 9.46023 24.3799C9.50023 24.3999 9.54023 24.4199 9.59023 24.4199C9.64023 24.4199 9.69023 24.4099 9.73023 24.3799C9.73023 24.3799 9.74023 24.3799 9.75023 24.3799C9.77023 24.3799 9.79023 24.3799 9.82023 24.3599C9.85023 24.3399 9.88023 24.3199 9.91023 24.2799L18.9002 19.1599H18.9202L18.9402 19.1299C19.0202 19.0499 19.1902 18.8999 19.1902 18.6599V13.8099L23.4002 11.3799C23.6302 11.2799 23.6902 11.0399 23.6902 10.8799V5.71993V5.69993V5.67993V5.65993V5.63993V5.61993V5.59993V5.50993L23.6402 5.45993L23.6502 5.47993ZM22.5502 10.5599L19.2002 12.4899V8.63994L21.3002 7.47993L22.5402 6.71993V10.5599H22.5502ZM5.08023 1.24993L8.43023 3.17993L5.08023 5.10993L1.73023 3.17993L5.08023 1.24993ZM9.00023 13.1399L6.94023 14.3499L5.65023 15.0699V6.09993L9.00023 4.16993V13.1299V13.1399ZM1.15023 4.16993L2.44023 4.88993L4.50023 6.09993V16.1599C4.50023 16.1599 4.51023 16.2599 4.54023 16.2999V16.3299L4.59023 16.3799L4.75023 16.5399L4.77023 16.5599C4.78023 16.5599 4.79023 16.5599 4.80023 16.5599L9.00023 18.9299V22.8299L1.15023 18.2799V4.16993ZM10.1502 18.9399L18.0502 14.4799V18.2899L10.1502 22.8399V18.9399ZM9.86023 13.9899L14.1202 11.5599L17.4602 13.4799L15.0002 14.8499L9.57023 17.9399L6.23023 16.0599L9.86023 13.9899ZM9.77024 13.8299V13.8099H9.76023V13.8299H9.77024ZM15.9402 7.46993L18.0402 8.62994V12.4699L16.7502 11.7099L14.7002 10.5499V6.70993L15.9402 7.45993V7.46993ZM18.6202 7.66993L15.2702 5.69993L18.6202 3.76993L21.9702 5.69993L18.6202 7.66993Z" fill="#2286E3"></path> </g> <defs> <clipPath id="clip0_2230_31821"> <rect width="23.7" height="24.41" fill="white"></rect> </clipPath> </defs> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Laravel App Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <mask id="path-1-outside-1_2141_6328" maskUnits="userSpaceOnUse" x="-0.166504" y="0" width="27" height="19" fill="black"> <rect fill="white" x="-0.166504" width="27" height="19"></rect> <path d="M22.0835 9.65625V8.95312V8.60156C22.0835 6.33594 20.2476 4.53906 18.021 4.53906C17.4741 4.53906 16.9663 4.61719 16.5366 4.8125L15.5601 5.16406L15.0132 4.30469C14.1147 2.9375 12.5913 2 10.8335 2C8.06006 2 5.8335 4.26562 5.8335 7V7.35156V8.21094L4.97412 8.52344C3.29443 9.10938 2.0835 10.75 2.0835 12.625V17H6.4585H20.8335H24.5835V13.25C24.5835 11.8828 23.8022 10.6719 22.7085 10.0078L22.0835 9.65625ZM4.5835 7.35156V7C4.5835 3.5625 7.35693 0.75 10.8335 0.75C13.021 0.75 14.9741 1.92188 16.0679 3.64062C16.6538 3.40625 17.3179 3.25 18.021 3.25C20.9507 3.25 23.3335 5.63281 23.3335 8.5625V8.95312C24.8179 9.8125 25.8335 11.4141 25.8335 13.25V17V18.25H24.5835H20.8335H6.4585H2.0835H0.833496V17V12.625C0.833496 10.2031 2.396 8.09375 4.5835 7.35156Z"></path> </mask> <path d="M22.0835 9.65625V8.95312V8.60156C22.0835 6.33594 20.2476 4.53906 18.021 4.53906C17.4741 4.53906 16.9663 4.61719 16.5366 4.8125L15.5601 5.16406L15.0132 4.30469C14.1147 2.9375 12.5913 2 10.8335 2C8.06006 2 5.8335 4.26562 5.8335 7V7.35156V8.21094L4.97412 8.52344C3.29443 9.10938 2.0835 10.75 2.0835 12.625V17H6.4585H20.8335H24.5835V13.25C24.5835 11.8828 23.8022 10.6719 22.7085 10.0078L22.0835 9.65625ZM4.5835 7.35156V7C4.5835 3.5625 7.35693 0.75 10.8335 0.75C13.021 0.75 14.9741 1.92188 16.0679 3.64062C16.6538 3.40625 17.3179 3.25 18.021 3.25C20.9507 3.25 23.3335 5.63281 23.3335 8.5625V8.95312C24.8179 9.8125 25.8335 11.4141 25.8335 13.25V17V18.25H24.5835H20.8335H6.4585H2.0835H0.833496V17V12.625C0.833496 10.2031 2.396 8.09375 4.5835 7.35156Z" fill="#2286E3"></path> <path d="M22.0835 9.65625H21.8835V9.77322L21.9854 9.83057L22.0835 9.65625ZM16.5366 4.8125L16.6044 5.00068L16.612 4.99793L16.6194 4.99457L16.5366 4.8125ZM15.5601 5.16406L15.3913 5.27144L15.4772 5.40644L15.6278 5.35224L15.5601 5.16406ZM15.0132 4.30469L15.1819 4.1973L15.1803 4.19485L15.0132 4.30469ZM5.8335 8.21094L5.90184 8.3989L6.0335 8.35102V8.21094H5.8335ZM4.97412 8.52344L5.04 8.71229L5.04247 8.7114L4.97412 8.52344ZM2.0835 17H1.8835V17.2H2.0835V17ZM24.5835 17V17.2H24.7835V17H24.5835ZM22.7085 10.0078L22.8123 9.83676L22.8065 9.8335L22.7085 10.0078ZM4.5835 7.35156L4.64776 7.54096L4.7835 7.4949V7.35156H4.5835ZM16.0679 3.64062L15.8991 3.748L15.9882 3.88791L16.1421 3.82632L16.0679 3.64062ZM23.3335 8.95312H23.1335V9.06844L23.2333 9.12621L23.3335 8.95312ZM25.8335 18.25V18.45H26.0335V18.25H25.8335ZM0.833496 18.25H0.633496V18.45H0.833496V18.25ZM22.2835 9.65625V8.95312H21.8835V9.65625H22.2835ZM22.2835 8.95312V8.60156H21.8835V8.95312H22.2835ZM22.2835 8.60156C22.2835 6.22423 20.3568 4.33906 18.021 4.33906V4.73906C20.1384 4.73906 21.8835 6.44765 21.8835 8.60156H22.2835ZM18.021 4.33906C17.4571 4.33906 16.9183 4.41933 16.4539 4.63043L16.6194 4.99457C17.0143 4.81505 17.4912 4.73906 18.021 4.73906V4.33906ZM16.4689 4.62432L15.4923 4.97589L15.6278 5.35224L16.6044 5.00068L16.4689 4.62432ZM15.7288 5.05669L15.1819 4.19731L14.8445 4.41206L15.3913 5.27144L15.7288 5.05669ZM15.1803 4.19485C14.2487 2.77713 12.6652 1.8 10.8335 1.8V2.2C12.5174 2.2 13.9808 3.09787 14.846 4.41452L15.1803 4.19485ZM10.8335 1.8C7.94859 1.8 5.6335 4.15619 5.6335 7H6.0335C6.0335 4.37506 8.17153 2.2 10.8335 2.2V1.8ZM5.6335 7V7.35156H6.0335V7H5.6335ZM5.6335 7.35156V8.21094H6.0335V7.35156H5.6335ZM5.76515 8.02298L4.90577 8.33548L5.04247 8.7114L5.90184 8.3989L5.76515 8.02298ZM4.90825 8.3346C3.14907 8.94826 1.8835 10.6641 1.8835 12.625H2.2835C2.2835 10.8359 3.4398 9.27049 5.04 8.71228L4.90825 8.3346ZM1.8835 12.625V17H2.2835V12.625H1.8835ZM2.0835 17.2H6.4585V16.8H2.0835V17.2ZM6.4585 17.2H20.8335V16.8H6.4585V17.2ZM20.8335 17.2H24.5835V16.8H20.8335V17.2ZM24.7835 17V13.25H24.3835V17H24.7835ZM24.7835 13.25C24.7835 11.8054 23.959 10.5331 22.8123 9.83685L22.6047 10.1788C23.6455 10.8107 24.3835 11.9602 24.3835 13.25H24.7835ZM22.8065 9.8335L22.1815 9.48193L21.9854 9.83057L22.6104 10.1821L22.8065 9.8335ZM4.7835 7.35156V7H4.3835V7.35156H4.7835ZM4.7835 7C4.7835 3.67214 7.4682 0.95 10.8335 0.95V0.55C7.24566 0.55 4.3835 3.45286 4.3835 7H4.7835ZM10.8335 0.95C12.9489 0.95 14.84 2.08372 15.8991 3.748L16.2366 3.53325C15.1082 1.76003 13.0931 0.55 10.8335 0.55V0.95ZM16.1421 3.82632C16.7086 3.59974 17.3474 3.45 18.021 3.45V3.05C17.2883 3.05 16.599 3.21276 15.9936 3.45493L16.1421 3.82632ZM18.021 3.45C20.8402 3.45 23.1335 5.74327 23.1335 8.5625H23.5335C23.5335 5.52236 21.0611 3.05 18.021 3.05V3.45ZM23.1335 8.5625V8.95312H23.5335V8.5625H23.1335ZM23.2333 9.12621C24.6598 9.95209 25.6335 11.4898 25.6335 13.25H26.0335C26.0335 11.3383 24.9759 9.67291 23.4337 8.78004L23.2333 9.12621ZM25.6335 13.25V17H26.0335V13.25H25.6335ZM25.6335 17V18.25H26.0335V17H25.6335ZM25.8335 18.05H24.5835V18.45H25.8335V18.05ZM24.5835 18.05H20.8335V18.45H24.5835V18.05ZM20.8335 18.05H6.4585V18.45H20.8335V18.05ZM6.4585 18.05H2.0835V18.45H6.4585V18.05ZM2.0835 18.05H0.833496V18.45H2.0835V18.05ZM1.0335 18.25V17H0.633496V18.25H1.0335ZM1.0335 17V12.625H0.633496V17H1.0335ZM1.0335 12.625C1.0335 10.2894 2.54081 8.25581 4.64776 7.54096L4.51924 7.16217C2.25118 7.93169 0.633496 10.1168 0.633496 12.625H1.0335Z" fill="#2286E3" mask="url(#path-1-outside-1_2141_6328)"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">APIs & Integrations</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.4559 19.2294C21.1368 19.2294 21.7536 18.5046 21.7536 16.7312V13.277C21.7536 11.6269 22.5555 10.6863 23.3265 10.2391C23.5578 10.1003 23.5578 9.77645 23.3265 9.62224C22.5246 9.11336 21.7536 8.04933 21.7536 6.63062V3.23807C21.7536 1.3259 21.2293 0.770752 19.5484 0.770752H4.45156C2.7707 0.770752 2.2464 1.3259 2.2464 3.23807V6.63062C2.2464 8.04933 1.47536 9.11336 0.673483 9.62224C0.442172 9.76103 0.442172 10.1003 0.673483 10.2391C1.44452 10.6709 2.2464 11.6115 2.2464 13.277V16.7312C2.2464 18.5046 2.86322 19.2294 4.54408 19.2294H19.4559ZM11.9614 16.0681C10.1572 16.0681 8.84646 15.5284 7.62823 14.4644C7.42776 14.2793 7.35065 14.048 7.35065 13.8167C7.35065 13.6316 7.39692 13.4312 7.5357 13.277L7.9058 12.7989C8.09085 12.5676 8.29132 12.4597 8.52263 12.4597C8.78478 12.4597 9.03151 12.5676 9.29366 12.7372C10.1264 13.277 11.0516 13.5854 12.1619 13.5854C13.0101 13.5854 13.6886 13.2307 13.6886 12.5059C13.6886 10.6246 7.42776 11.6578 7.42776 7.4325C7.42776 5.16566 9.27824 3.90116 11.6839 3.90116C13.3802 3.90116 14.6292 4.39462 15.5545 4.98061C15.7858 5.13482 15.94 5.44323 15.94 5.75164C15.94 5.93669 15.8937 6.10632 15.7858 6.26053L15.5082 6.67689C15.3077 6.95446 15.0764 7.09325 14.7834 7.09325C14.583 7.09325 14.3671 7.01614 14.1358 6.9082C13.4418 6.55352 12.7171 6.36847 11.8381 6.36847C10.9283 6.36847 10.3885 6.86194 10.3885 7.37082C10.3885 9.29841 16.6493 8.2498 16.6493 12.3517C16.6493 14.6494 14.7989 16.0681 11.9614 16.0681Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Statamic Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.4634 2.48438C11.0728 2.71875 11.6821 3.04688 12.1978 3.51562L14.2134 2.8125L15.854 5.625L14.2603 7.03125C14.3071 7.35938 14.354 7.73438 14.354 8.0625C14.354 8.4375 14.3071 8.76562 14.2603 9.14062L15.854 10.5469L14.2134 13.3125L12.1978 12.6562C11.6821 13.125 11.0728 13.4531 10.4634 13.6875L9.99463 15.9375H6.71338L6.24463 13.6875C5.58838 13.4531 4.979 13.125 4.46338 12.6562L2.44775 13.3125L0.854004 10.5469L2.40088 9.14062C2.354 8.8125 2.354 8.4375 2.354 8.0625C2.354 7.73438 2.354 7.35938 2.40088 7.03125L0.854004 5.625L2.44775 2.8125L4.46338 3.51562C4.979 3.04688 5.58838 2.71875 6.24463 2.48438L6.71338 0.1875H9.99463L10.4634 2.48438ZM13.5571 4.64062L12.6665 4.92188L11.8696 5.20312L11.2134 4.64062C10.8384 4.3125 10.4165 4.03125 9.90088 3.89062L9.15088 3.5625L8.96338 2.76562L8.77588 1.6875H7.93213L7.69775 2.76562L7.51025 3.5625L6.76025 3.89062C6.24463 4.07812 5.82275 4.3125 5.44775 4.64062L4.7915 5.20312L3.99463 4.92188L3.15088 4.64062L2.729 5.29688L3.43213 5.90625L4.0415 6.46875L3.90088 7.3125C3.854 7.54688 3.80713 7.82812 3.80713 8.0625C3.80713 8.34375 3.854 8.625 3.90088 8.85938L4.0415 9.70312L3.43213 10.2656L2.729 10.875L3.15088 11.5312L3.99463 11.25L4.7915 10.9688L5.44775 11.5312C5.82275 11.8594 6.24463 12.0938 6.76025 12.2812L7.51025 12.6094L7.69775 13.4062L7.93213 14.4375H8.77588L8.96338 13.4062L9.15088 12.5625L9.90088 12.2812C10.4165 12.0938 10.8384 11.8594 11.2134 11.5312L11.8696 10.9688L12.6665 11.25L13.5571 11.5312L13.9321 10.875L13.229 10.2656L12.6196 9.70312L12.7603 8.85938C12.8071 8.625 12.854 8.34375 12.854 8.0625C12.854 7.82812 12.8071 7.54688 12.7603 7.3125L12.6196 6.46875L13.229 5.90625L13.9321 5.29688L13.5571 4.64062ZM8.354 9.1875C8.96338 9.1875 9.479 8.71875 9.479 8.0625C9.479 7.45312 8.96338 6.9375 8.354 6.9375C7.69775 6.9375 7.229 7.45312 7.229 8.0625C7.229 8.71875 7.69775 9.1875 8.354 9.1875ZM5.729 8.0625C5.729 7.125 6.19775 6.28125 7.0415 5.8125C7.83838 5.34375 8.82275 5.34375 9.6665 5.8125C10.4634 6.28125 10.979 7.125 10.979 8.0625C10.979 9.04688 10.4634 9.89062 9.6665 10.3594C8.82275 10.8281 7.83838 10.8281 7.0415 10.3594C6.19775 9.89062 5.729 9.04688 5.729 8.0625ZM16.979 14.2031C17.2134 13.5938 17.5415 12.9844 18.0103 12.4688L17.354 10.4531L20.1196 8.8125L21.5259 10.4062C21.854 10.3594 22.229 10.3125 22.604 10.3125C22.9321 10.3125 23.3071 10.3594 23.6353 10.4062L25.0415 8.8125L27.854 10.4531L27.1509 12.4688C27.6196 12.9844 27.9478 13.5938 28.1821 14.2031L30.479 14.6719V17.9531L28.1821 18.4219C27.9478 19.0781 27.6196 19.6875 27.1509 20.2031L27.854 22.2188L25.0415 23.8125L23.6353 22.2656C23.3071 22.3125 22.9321 22.3125 22.604 22.3125C22.229 22.3125 21.9009 22.3125 21.5259 22.2656L20.1196 23.8125L17.354 22.2188L18.0103 20.2031C17.5415 19.6875 17.2134 19.0781 16.979 18.4219L14.729 17.9531V14.6719L16.979 14.2031ZM19.1353 11.1094L19.4165 12L19.6978 12.7969L19.1353 13.4531C18.8071 13.8281 18.5728 14.25 18.3853 14.7656L18.0571 15.5156L17.2603 15.7031L16.229 15.8906V16.7344L17.2603 16.9688L18.104 17.1562L18.3853 17.9062C18.5728 18.4219 18.8071 18.8438 19.1353 19.2188L19.6978 19.875L19.4165 20.6719L19.1353 21.5156L19.7915 21.9375L20.4009 21.2344L20.9634 20.625L21.8071 20.7656C22.0415 20.8125 22.3228 20.8594 22.604 20.8594C22.8384 20.8594 23.1196 20.8125 23.354 20.7656L24.1978 20.625L24.7603 21.2344L25.3696 21.9375L26.0259 21.5156L25.7446 20.6719L25.4634 19.875L26.0259 19.2188C26.354 18.8438 26.6353 18.4219 26.7759 17.9062L27.104 17.1562L27.9009 16.9688L28.979 16.7344V15.8906L27.9009 15.7031L27.104 15.5156L26.7759 14.7656C26.5884 14.25 26.354 13.8281 26.0259 13.4531L25.4634 12.7969L25.7446 12L26.0259 11.1094L25.3696 10.7344L24.7603 11.4375L24.1978 12.0469L23.354 11.9062C23.1196 11.8594 22.8384 11.8125 22.604 11.8125C22.3228 11.8125 22.0415 11.8594 21.8071 11.9062L20.9634 12.0469L20.4009 11.4375L19.7915 10.7344L19.1353 11.1094ZM23.729 16.3125C23.729 15.7031 23.2134 15.1875 22.604 15.1875C21.9478 15.1875 21.479 15.7031 21.479 16.3125C21.479 16.9688 21.9478 17.4375 22.604 17.4375C23.2134 17.4375 23.729 16.9688 23.729 16.3125ZM22.604 18.9375C21.6196 18.9375 20.7759 18.4688 20.3071 17.625C19.8384 16.8281 19.8384 15.8438 20.3071 15C20.7759 14.2031 21.6196 13.6875 22.604 13.6875C23.5415 13.6875 24.3853 14.2031 24.854 15C25.3228 15.8438 25.3228 16.8281 24.854 17.625C24.3853 18.4688 23.5415 18.9375 22.604 18.9375Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">CMS Migration</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.3335 1.5C9.53662 1.5 6.11475 3.51562 4.23975 6.75C2.31787 10.0312 2.31787 14.0156 4.23975 17.25C6.11475 20.5312 9.53662 22.5 13.3335 22.5C17.0835 22.5 20.5054 20.5312 22.3804 17.25C24.3022 14.0156 24.3022 10.0312 22.3804 6.75C20.5054 3.51562 17.0835 1.5 13.3335 1.5ZM13.3335 24C9.021 24 5.0835 21.75 2.92725 18C0.770996 14.2969 0.770996 9.75 2.92725 6C5.0835 2.29688 9.021 0 13.3335 0C17.5991 0 21.5366 2.29688 23.6929 6C25.8491 9.75 25.8491 14.2969 23.6929 18C21.5366 21.75 17.5991 24 13.3335 24ZM12.5835 6.75C12.5835 7.17188 12.9116 7.5 13.3335 7.5C13.7085 7.5 14.0835 7.17188 14.0835 6.75C14.0835 6.375 13.7085 6 13.3335 6C12.9116 6 12.5835 6.375 12.5835 6.75ZM15.5835 6.75C15.5835 7.59375 15.1147 8.29688 14.4585 8.71875C13.7554 9.14062 12.8647 9.14062 12.2085 8.71875C11.5054 8.29688 11.0835 7.59375 11.0835 6.75C11.0835 5.95312 11.5054 5.25 12.2085 4.82812C12.8647 4.40625 13.7554 4.40625 14.4585 4.82812C15.1147 5.25 15.5835 5.95312 15.5835 6.75ZM7.66162 8.76562L8.36475 9.09375L11.5991 10.5H12.5835H14.0835H15.021L18.2554 9.09375L18.9585 8.76562L19.5679 10.1719L18.8647 10.4531L15.5835 11.9062V14.9531L16.2866 18.6094L16.4272 19.3594L14.9741 19.6406L14.8335 18.9375L14.1772 15.75H12.4429L11.7866 18.9375L11.646 19.6406L10.1929 19.3594L10.3335 18.6094L11.0835 14.9531V11.9062L7.75537 10.4531L7.05225 10.1719L7.66162 8.76562ZM12.5835 12V14.25H14.0835V12H12.5835Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Accessibility & Compliance</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+      </div>
+         <section class="sboxbg spaceTB">
+            <div class="container">
+               <div class="sboxbg_color sboxbg_color2">
+                  <div class="row">
+                     <div class="col-sm-6 col-oRder-1">
+                        <div class="heading">
+                           <h2>Development</h2>
+                           <p>You need a digital foundation that fosters your growth, not one that hinders it. We create robust, scaleable, and intuitive solutions that empower you for growth and can adapt alongside you as your business evolves.</p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-oRder-2">
+                        <div class="ssimage">
+                           <img src="img/developmetnimg.png" alt="">
+                        </div>
+                     </div>
+                     <div class="col-sm-12 col-oRder-3">
+                        <div class="subserv">
+                           <h4>Our Development Expertise</h4>
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M2.85938 7.96875C2.29688 9.1875 2.01562 10.5938 2.01562 12C2.01562 15.9844 4.3125 19.3594 7.64062 21L2.85938 7.96875ZM18.7031 11.5312C18.7031 12.375 18.375 13.3594 17.9531 14.7188L16.9688 18.0469L13.3594 7.35938C13.9688 7.3125 14.4844 7.26562 14.4844 7.26562C15.0469 7.17188 14.9531 6.375 14.4375 6.42188C14.4375 6.42188 12.7969 6.5625 11.7656 6.5625C10.7812 6.5625 9.14062 6.42188 9.14062 6.42188C8.625 6.375 8.53125 7.21875 9.09375 7.26562C9.09375 7.26562 9.60938 7.3125 10.125 7.35938L11.6719 11.5781L9.51562 18.1406L5.85938 7.35938C6.46875 7.3125 7.03125 7.26562 7.03125 7.26562C7.54688 7.17188 7.5 6.375 6.9375 6.42188C6.9375 6.42188 5.34375 6.5625 4.26562 6.5625C4.07812 6.5625 3.89062 6.5625 3.65625 6.5625C5.4375 3.84375 8.48438 2.0625 12 2.0625C14.5781 2.0625 16.9219 3.04688 18.7031 4.6875C18.6562 4.64062 18.6094 4.64062 18.5625 4.64062C17.625 4.64062 16.9219 5.53125 16.9219 6.42188C16.9219 7.26562 17.3906 7.96875 17.9062 8.76562C18.2812 9.42188 18.7031 10.2656 18.7031 11.5312ZM12.1406 12.8906L15.2344 21.2812C15.2344 21.3281 15.2812 21.375 15.2812 21.4219C14.25 21.7969 13.125 21.9844 12 21.9844C11.0156 21.9844 10.0781 21.8438 9.14062 21.6094L12.1406 12.8906ZM20.7188 7.21875C21.5156 8.67188 21.9375 10.2656 21.9375 12C21.9375 15.7031 19.9688 18.8906 16.9688 20.625L20.0156 11.8125C20.625 10.4062 20.8125 9.28125 20.8125 8.25C20.8125 7.875 20.7656 7.54688 20.7188 7.21875ZM23.625 12C23.625 5.625 18.375 0.375 12 0.375C5.57812 0.375 0.375 5.625 0.375 12C0.375 18.4219 5.57812 23.625 12 23.625C18.375 23.625 23.625 18.4219 23.625 12ZM23.0625 12C23.0625 18.1406 18.0938 23.1094 12 23.1094C5.85938 23.1094 0.890625 18.1406 0.890625 12C0.890625 5.90625 5.85938 0.9375 12 0.9375C18.0938 0.9375 23.0625 5.90625 23.0625 12Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">WordPress Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2230_31821)"> <path d="M23.6502 5.47993V5.42993L23.5902 5.36993L23.5502 5.32993V5.29993L23.4502 5.23993L18.9502 2.65993H18.9302L18.9102 2.63993C18.7402 2.57993 18.5402 2.56993 18.3802 2.64993L13.8802 5.22993H13.8602L13.8402 5.25993C13.8402 5.25993 13.8302 5.25993 13.8202 5.25993C13.7902 5.27993 13.7802 5.29993 13.7702 5.31993C13.7502 5.32993 13.7302 5.34993 13.7102 5.36993C13.7102 5.36993 13.7102 5.37993 13.7102 5.38993C13.7102 5.38993 13.7102 5.38993 13.7002 5.39993C13.6902 5.40993 13.6702 5.42993 13.6602 5.45993C13.6302 5.51993 13.6302 5.58993 13.6302 5.59993V5.61993V5.63993V5.65993V5.67993V5.69993V5.71993V10.5799L10.2302 12.5099V3.16993V3.14993V3.12993V3.10993V3.08993V3.06993V3.04993V2.99993H10.1502C10.2036 2.99993 10.2302 2.99993 10.2302 2.99993C10.2302 2.99993 10.2302 2.98993 10.2302 2.97993C10.2302 2.95993 10.2302 2.93993 10.2102 2.90993C10.2102 2.90993 10.2002 2.89993 10.1902 2.88993V2.72993H10.1402V2.67993H10.0002C10.0002 2.67993 9.93023 2.63993 9.91023 2.63993L5.36023 0.0899347C5.18023 -0.0500653 4.96023 -0.0200653 4.79023 0.0899347L0.300234 2.65993C0.290234 2.65993 0.280234 2.65993 0.270234 2.65993C0.270234 2.65993 0.260234 2.66993 0.250234 2.67993H0.0902344V2.72993H0.0402344V2.81993H-0.00976562V3.06993V3.08993V3.10993V3.12993V3.14993V3.16993V3.18993V18.6599C-0.00976562 18.7499 0.0102344 18.8499 0.0602344 18.9399C0.110234 19.0299 0.180234 19.0999 0.270234 19.1599H0.280234L9.26023 24.2999C9.26023 24.2999 9.26023 24.2999 9.28023 24.3099C9.29023 24.3199 9.31023 24.3399 9.34023 24.3499C9.39023 24.3799 9.44023 24.3799 9.46023 24.3799C9.50023 24.3999 9.54023 24.4199 9.59023 24.4199C9.64023 24.4199 9.69023 24.4099 9.73023 24.3799C9.73023 24.3799 9.74023 24.3799 9.75023 24.3799C9.77023 24.3799 9.79023 24.3799 9.82023 24.3599C9.85023 24.3399 9.88023 24.3199 9.91023 24.2799L18.9002 19.1599H18.9202L18.9402 19.1299C19.0202 19.0499 19.1902 18.8999 19.1902 18.6599V13.8099L23.4002 11.3799C23.6302 11.2799 23.6902 11.0399 23.6902 10.8799V5.71993V5.69993V5.67993V5.65993V5.63993V5.61993V5.59993V5.50993L23.6402 5.45993L23.6502 5.47993ZM22.5502 10.5599L19.2002 12.4899V8.63994L21.3002 7.47993L22.5402 6.71993V10.5599H22.5502ZM5.08023 1.24993L8.43023 3.17993L5.08023 5.10993L1.73023 3.17993L5.08023 1.24993ZM9.00023 13.1399L6.94023 14.3499L5.65023 15.0699V6.09993L9.00023 4.16993V13.1299V13.1399ZM1.15023 4.16993L2.44023 4.88993L4.50023 6.09993V16.1599C4.50023 16.1599 4.51023 16.2599 4.54023 16.2999V16.3299L4.59023 16.3799L4.75023 16.5399L4.77023 16.5599C4.78023 16.5599 4.79023 16.5599 4.80023 16.5599L9.00023 18.9299V22.8299L1.15023 18.2799V4.16993ZM10.1502 18.9399L18.0502 14.4799V18.2899L10.1502 22.8399V18.9399ZM9.86023 13.9899L14.1202 11.5599L17.4602 13.4799L15.0002 14.8499L9.57023 17.9399L6.23023 16.0599L9.86023 13.9899ZM9.77024 13.8299V13.8099H9.76023V13.8299H9.77024ZM15.9402 7.46993L18.0402 8.62994V12.4699L16.7502 11.7099L14.7002 10.5499V6.70993L15.9402 7.45993V7.46993ZM18.6202 7.66993L15.2702 5.69993L18.6202 3.76993L21.9702 5.69993L18.6202 7.66993Z" fill="#2286E3"></path> </g> <defs> <clipPath id="clip0_2230_31821"> <rect width="23.7" height="24.41" fill="white"></rect> </clipPath> </defs> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Laravel App Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <mask id="path-1-outside-1_2141_6328" maskUnits="userSpaceOnUse" x="-0.166504" y="0" width="27" height="19" fill="black"> <rect fill="white" x="-0.166504" width="27" height="19"></rect> <path d="M22.0835 9.65625V8.95312V8.60156C22.0835 6.33594 20.2476 4.53906 18.021 4.53906C17.4741 4.53906 16.9663 4.61719 16.5366 4.8125L15.5601 5.16406L15.0132 4.30469C14.1147 2.9375 12.5913 2 10.8335 2C8.06006 2 5.8335 4.26562 5.8335 7V7.35156V8.21094L4.97412 8.52344C3.29443 9.10938 2.0835 10.75 2.0835 12.625V17H6.4585H20.8335H24.5835V13.25C24.5835 11.8828 23.8022 10.6719 22.7085 10.0078L22.0835 9.65625ZM4.5835 7.35156V7C4.5835 3.5625 7.35693 0.75 10.8335 0.75C13.021 0.75 14.9741 1.92188 16.0679 3.64062C16.6538 3.40625 17.3179 3.25 18.021 3.25C20.9507 3.25 23.3335 5.63281 23.3335 8.5625V8.95312C24.8179 9.8125 25.8335 11.4141 25.8335 13.25V17V18.25H24.5835H20.8335H6.4585H2.0835H0.833496V17V12.625C0.833496 10.2031 2.396 8.09375 4.5835 7.35156Z"></path> </mask> <path d="M22.0835 9.65625V8.95312V8.60156C22.0835 6.33594 20.2476 4.53906 18.021 4.53906C17.4741 4.53906 16.9663 4.61719 16.5366 4.8125L15.5601 5.16406L15.0132 4.30469C14.1147 2.9375 12.5913 2 10.8335 2C8.06006 2 5.8335 4.26562 5.8335 7V7.35156V8.21094L4.97412 8.52344C3.29443 9.10938 2.0835 10.75 2.0835 12.625V17H6.4585H20.8335H24.5835V13.25C24.5835 11.8828 23.8022 10.6719 22.7085 10.0078L22.0835 9.65625ZM4.5835 7.35156V7C4.5835 3.5625 7.35693 0.75 10.8335 0.75C13.021 0.75 14.9741 1.92188 16.0679 3.64062C16.6538 3.40625 17.3179 3.25 18.021 3.25C20.9507 3.25 23.3335 5.63281 23.3335 8.5625V8.95312C24.8179 9.8125 25.8335 11.4141 25.8335 13.25V17V18.25H24.5835H20.8335H6.4585H2.0835H0.833496V17V12.625C0.833496 10.2031 2.396 8.09375 4.5835 7.35156Z" fill="#2286E3"></path> <path d="M22.0835 9.65625H21.8835V9.77322L21.9854 9.83057L22.0835 9.65625ZM16.5366 4.8125L16.6044 5.00068L16.612 4.99793L16.6194 4.99457L16.5366 4.8125ZM15.5601 5.16406L15.3913 5.27144L15.4772 5.40644L15.6278 5.35224L15.5601 5.16406ZM15.0132 4.30469L15.1819 4.1973L15.1803 4.19485L15.0132 4.30469ZM5.8335 8.21094L5.90184 8.3989L6.0335 8.35102V8.21094H5.8335ZM4.97412 8.52344L5.04 8.71229L5.04247 8.7114L4.97412 8.52344ZM2.0835 17H1.8835V17.2H2.0835V17ZM24.5835 17V17.2H24.7835V17H24.5835ZM22.7085 10.0078L22.8123 9.83676L22.8065 9.8335L22.7085 10.0078ZM4.5835 7.35156L4.64776 7.54096L4.7835 7.4949V7.35156H4.5835ZM16.0679 3.64062L15.8991 3.748L15.9882 3.88791L16.1421 3.82632L16.0679 3.64062ZM23.3335 8.95312H23.1335V9.06844L23.2333 9.12621L23.3335 8.95312ZM25.8335 18.25V18.45H26.0335V18.25H25.8335ZM0.833496 18.25H0.633496V18.45H0.833496V18.25ZM22.2835 9.65625V8.95312H21.8835V9.65625H22.2835ZM22.2835 8.95312V8.60156H21.8835V8.95312H22.2835ZM22.2835 8.60156C22.2835 6.22423 20.3568 4.33906 18.021 4.33906V4.73906C20.1384 4.73906 21.8835 6.44765 21.8835 8.60156H22.2835ZM18.021 4.33906C17.4571 4.33906 16.9183 4.41933 16.4539 4.63043L16.6194 4.99457C17.0143 4.81505 17.4912 4.73906 18.021 4.73906V4.33906ZM16.4689 4.62432L15.4923 4.97589L15.6278 5.35224L16.6044 5.00068L16.4689 4.62432ZM15.7288 5.05669L15.1819 4.19731L14.8445 4.41206L15.3913 5.27144L15.7288 5.05669ZM15.1803 4.19485C14.2487 2.77713 12.6652 1.8 10.8335 1.8V2.2C12.5174 2.2 13.9808 3.09787 14.846 4.41452L15.1803 4.19485ZM10.8335 1.8C7.94859 1.8 5.6335 4.15619 5.6335 7H6.0335C6.0335 4.37506 8.17153 2.2 10.8335 2.2V1.8ZM5.6335 7V7.35156H6.0335V7H5.6335ZM5.6335 7.35156V8.21094H6.0335V7.35156H5.6335ZM5.76515 8.02298L4.90577 8.33548L5.04247 8.7114L5.90184 8.3989L5.76515 8.02298ZM4.90825 8.3346C3.14907 8.94826 1.8835 10.6641 1.8835 12.625H2.2835C2.2835 10.8359 3.4398 9.27049 5.04 8.71228L4.90825 8.3346ZM1.8835 12.625V17H2.2835V12.625H1.8835ZM2.0835 17.2H6.4585V16.8H2.0835V17.2ZM6.4585 17.2H20.8335V16.8H6.4585V17.2ZM20.8335 17.2H24.5835V16.8H20.8335V17.2ZM24.7835 17V13.25H24.3835V17H24.7835ZM24.7835 13.25C24.7835 11.8054 23.959 10.5331 22.8123 9.83685L22.6047 10.1788C23.6455 10.8107 24.3835 11.9602 24.3835 13.25H24.7835ZM22.8065 9.8335L22.1815 9.48193L21.9854 9.83057L22.6104 10.1821L22.8065 9.8335ZM4.7835 7.35156V7H4.3835V7.35156H4.7835ZM4.7835 7C4.7835 3.67214 7.4682 0.95 10.8335 0.95V0.55C7.24566 0.55 4.3835 3.45286 4.3835 7H4.7835ZM10.8335 0.95C12.9489 0.95 14.84 2.08372 15.8991 3.748L16.2366 3.53325C15.1082 1.76003 13.0931 0.55 10.8335 0.55V0.95ZM16.1421 3.82632C16.7086 3.59974 17.3474 3.45 18.021 3.45V3.05C17.2883 3.05 16.599 3.21276 15.9936 3.45493L16.1421 3.82632ZM18.021 3.45C20.8402 3.45 23.1335 5.74327 23.1335 8.5625H23.5335C23.5335 5.52236 21.0611 3.05 18.021 3.05V3.45ZM23.1335 8.5625V8.95312H23.5335V8.5625H23.1335ZM23.2333 9.12621C24.6598 9.95209 25.6335 11.4898 25.6335 13.25H26.0335C26.0335 11.3383 24.9759 9.67291 23.4337 8.78004L23.2333 9.12621ZM25.6335 13.25V17H26.0335V13.25H25.6335ZM25.6335 17V18.25H26.0335V17H25.6335ZM25.8335 18.05H24.5835V18.45H25.8335V18.05ZM24.5835 18.05H20.8335V18.45H24.5835V18.05ZM20.8335 18.05H6.4585V18.45H20.8335V18.05ZM6.4585 18.05H2.0835V18.45H6.4585V18.05ZM2.0835 18.05H0.833496V18.45H2.0835V18.05ZM1.0335 18.25V17H0.633496V18.25H1.0335ZM1.0335 17V12.625H0.633496V17H1.0335ZM1.0335 12.625C1.0335 10.2894 2.54081 8.25581 4.64776 7.54096L4.51924 7.16217C2.25118 7.93169 0.633496 10.1168 0.633496 12.625H1.0335Z" fill="#2286E3" mask="url(#path-1-outside-1_2141_6328)"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">APIs & Integrations</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.4559 19.2294C21.1368 19.2294 21.7536 18.5046 21.7536 16.7312V13.277C21.7536 11.6269 22.5555 10.6863 23.3265 10.2391C23.5578 10.1003 23.5578 9.77645 23.3265 9.62224C22.5246 9.11336 21.7536 8.04933 21.7536 6.63062V3.23807C21.7536 1.3259 21.2293 0.770752 19.5484 0.770752H4.45156C2.7707 0.770752 2.2464 1.3259 2.2464 3.23807V6.63062C2.2464 8.04933 1.47536 9.11336 0.673483 9.62224C0.442172 9.76103 0.442172 10.1003 0.673483 10.2391C1.44452 10.6709 2.2464 11.6115 2.2464 13.277V16.7312C2.2464 18.5046 2.86322 19.2294 4.54408 19.2294H19.4559ZM11.9614 16.0681C10.1572 16.0681 8.84646 15.5284 7.62823 14.4644C7.42776 14.2793 7.35065 14.048 7.35065 13.8167C7.35065 13.6316 7.39692 13.4312 7.5357 13.277L7.9058 12.7989C8.09085 12.5676 8.29132 12.4597 8.52263 12.4597C8.78478 12.4597 9.03151 12.5676 9.29366 12.7372C10.1264 13.277 11.0516 13.5854 12.1619 13.5854C13.0101 13.5854 13.6886 13.2307 13.6886 12.5059C13.6886 10.6246 7.42776 11.6578 7.42776 7.4325C7.42776 5.16566 9.27824 3.90116 11.6839 3.90116C13.3802 3.90116 14.6292 4.39462 15.5545 4.98061C15.7858 5.13482 15.94 5.44323 15.94 5.75164C15.94 5.93669 15.8937 6.10632 15.7858 6.26053L15.5082 6.67689C15.3077 6.95446 15.0764 7.09325 14.7834 7.09325C14.583 7.09325 14.3671 7.01614 14.1358 6.9082C13.4418 6.55352 12.7171 6.36847 11.8381 6.36847C10.9283 6.36847 10.3885 6.86194 10.3885 7.37082C10.3885 9.29841 16.6493 8.2498 16.6493 12.3517C16.6493 14.6494 14.7989 16.0681 11.9614 16.0681Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Statamic Development</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.4634 2.48438C11.0728 2.71875 11.6821 3.04688 12.1978 3.51562L14.2134 2.8125L15.854 5.625L14.2603 7.03125C14.3071 7.35938 14.354 7.73438 14.354 8.0625C14.354 8.4375 14.3071 8.76562 14.2603 9.14062L15.854 10.5469L14.2134 13.3125L12.1978 12.6562C11.6821 13.125 11.0728 13.4531 10.4634 13.6875L9.99463 15.9375H6.71338L6.24463 13.6875C5.58838 13.4531 4.979 13.125 4.46338 12.6562L2.44775 13.3125L0.854004 10.5469L2.40088 9.14062C2.354 8.8125 2.354 8.4375 2.354 8.0625C2.354 7.73438 2.354 7.35938 2.40088 7.03125L0.854004 5.625L2.44775 2.8125L4.46338 3.51562C4.979 3.04688 5.58838 2.71875 6.24463 2.48438L6.71338 0.1875H9.99463L10.4634 2.48438ZM13.5571 4.64062L12.6665 4.92188L11.8696 5.20312L11.2134 4.64062C10.8384 4.3125 10.4165 4.03125 9.90088 3.89062L9.15088 3.5625L8.96338 2.76562L8.77588 1.6875H7.93213L7.69775 2.76562L7.51025 3.5625L6.76025 3.89062C6.24463 4.07812 5.82275 4.3125 5.44775 4.64062L4.7915 5.20312L3.99463 4.92188L3.15088 4.64062L2.729 5.29688L3.43213 5.90625L4.0415 6.46875L3.90088 7.3125C3.854 7.54688 3.80713 7.82812 3.80713 8.0625C3.80713 8.34375 3.854 8.625 3.90088 8.85938L4.0415 9.70312L3.43213 10.2656L2.729 10.875L3.15088 11.5312L3.99463 11.25L4.7915 10.9688L5.44775 11.5312C5.82275 11.8594 6.24463 12.0938 6.76025 12.2812L7.51025 12.6094L7.69775 13.4062L7.93213 14.4375H8.77588L8.96338 13.4062L9.15088 12.5625L9.90088 12.2812C10.4165 12.0938 10.8384 11.8594 11.2134 11.5312L11.8696 10.9688L12.6665 11.25L13.5571 11.5312L13.9321 10.875L13.229 10.2656L12.6196 9.70312L12.7603 8.85938C12.8071 8.625 12.854 8.34375 12.854 8.0625C12.854 7.82812 12.8071 7.54688 12.7603 7.3125L12.6196 6.46875L13.229 5.90625L13.9321 5.29688L13.5571 4.64062ZM8.354 9.1875C8.96338 9.1875 9.479 8.71875 9.479 8.0625C9.479 7.45312 8.96338 6.9375 8.354 6.9375C7.69775 6.9375 7.229 7.45312 7.229 8.0625C7.229 8.71875 7.69775 9.1875 8.354 9.1875ZM5.729 8.0625C5.729 7.125 6.19775 6.28125 7.0415 5.8125C7.83838 5.34375 8.82275 5.34375 9.6665 5.8125C10.4634 6.28125 10.979 7.125 10.979 8.0625C10.979 9.04688 10.4634 9.89062 9.6665 10.3594C8.82275 10.8281 7.83838 10.8281 7.0415 10.3594C6.19775 9.89062 5.729 9.04688 5.729 8.0625ZM16.979 14.2031C17.2134 13.5938 17.5415 12.9844 18.0103 12.4688L17.354 10.4531L20.1196 8.8125L21.5259 10.4062C21.854 10.3594 22.229 10.3125 22.604 10.3125C22.9321 10.3125 23.3071 10.3594 23.6353 10.4062L25.0415 8.8125L27.854 10.4531L27.1509 12.4688C27.6196 12.9844 27.9478 13.5938 28.1821 14.2031L30.479 14.6719V17.9531L28.1821 18.4219C27.9478 19.0781 27.6196 19.6875 27.1509 20.2031L27.854 22.2188L25.0415 23.8125L23.6353 22.2656C23.3071 22.3125 22.9321 22.3125 22.604 22.3125C22.229 22.3125 21.9009 22.3125 21.5259 22.2656L20.1196 23.8125L17.354 22.2188L18.0103 20.2031C17.5415 19.6875 17.2134 19.0781 16.979 18.4219L14.729 17.9531V14.6719L16.979 14.2031ZM19.1353 11.1094L19.4165 12L19.6978 12.7969L19.1353 13.4531C18.8071 13.8281 18.5728 14.25 18.3853 14.7656L18.0571 15.5156L17.2603 15.7031L16.229 15.8906V16.7344L17.2603 16.9688L18.104 17.1562L18.3853 17.9062C18.5728 18.4219 18.8071 18.8438 19.1353 19.2188L19.6978 19.875L19.4165 20.6719L19.1353 21.5156L19.7915 21.9375L20.4009 21.2344L20.9634 20.625L21.8071 20.7656C22.0415 20.8125 22.3228 20.8594 22.604 20.8594C22.8384 20.8594 23.1196 20.8125 23.354 20.7656L24.1978 20.625L24.7603 21.2344L25.3696 21.9375L26.0259 21.5156L25.7446 20.6719L25.4634 19.875L26.0259 19.2188C26.354 18.8438 26.6353 18.4219 26.7759 17.9062L27.104 17.1562L27.9009 16.9688L28.979 16.7344V15.8906L27.9009 15.7031L27.104 15.5156L26.7759 14.7656C26.5884 14.25 26.354 13.8281 26.0259 13.4531L25.4634 12.7969L25.7446 12L26.0259 11.1094L25.3696 10.7344L24.7603 11.4375L24.1978 12.0469L23.354 11.9062C23.1196 11.8594 22.8384 11.8125 22.604 11.8125C22.3228 11.8125 22.0415 11.8594 21.8071 11.9062L20.9634 12.0469L20.4009 11.4375L19.7915 10.7344L19.1353 11.1094ZM23.729 16.3125C23.729 15.7031 23.2134 15.1875 22.604 15.1875C21.9478 15.1875 21.479 15.7031 21.479 16.3125C21.479 16.9688 21.9478 17.4375 22.604 17.4375C23.2134 17.4375 23.729 16.9688 23.729 16.3125ZM22.604 18.9375C21.6196 18.9375 20.7759 18.4688 20.3071 17.625C19.8384 16.8281 19.8384 15.8438 20.3071 15C20.7759 14.2031 21.6196 13.6875 22.604 13.6875C23.5415 13.6875 24.3853 14.2031 24.854 15C25.3228 15.8438 25.3228 16.8281 24.854 17.625C24.3853 18.4688 23.5415 18.9375 22.604 18.9375Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">CMS Migration</div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-4">
+                                 <a href="#" class="sb_S-boxTxt">
+                                    <div class="sb_s-icon">
+                                       <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.3335 1.5C9.53662 1.5 6.11475 3.51562 4.23975 6.75C2.31787 10.0312 2.31787 14.0156 4.23975 17.25C6.11475 20.5312 9.53662 22.5 13.3335 22.5C17.0835 22.5 20.5054 20.5312 22.3804 17.25C24.3022 14.0156 24.3022 10.0312 22.3804 6.75C20.5054 3.51562 17.0835 1.5 13.3335 1.5ZM13.3335 24C9.021 24 5.0835 21.75 2.92725 18C0.770996 14.2969 0.770996 9.75 2.92725 6C5.0835 2.29688 9.021 0 13.3335 0C17.5991 0 21.5366 2.29688 23.6929 6C25.8491 9.75 25.8491 14.2969 23.6929 18C21.5366 21.75 17.5991 24 13.3335 24ZM12.5835 6.75C12.5835 7.17188 12.9116 7.5 13.3335 7.5C13.7085 7.5 14.0835 7.17188 14.0835 6.75C14.0835 6.375 13.7085 6 13.3335 6C12.9116 6 12.5835 6.375 12.5835 6.75ZM15.5835 6.75C15.5835 7.59375 15.1147 8.29688 14.4585 8.71875C13.7554 9.14062 12.8647 9.14062 12.2085 8.71875C11.5054 8.29688 11.0835 7.59375 11.0835 6.75C11.0835 5.95312 11.5054 5.25 12.2085 4.82812C12.8647 4.40625 13.7554 4.40625 14.4585 4.82812C15.1147 5.25 15.5835 5.95312 15.5835 6.75ZM7.66162 8.76562L8.36475 9.09375L11.5991 10.5H12.5835H14.0835H15.021L18.2554 9.09375L18.9585 8.76562L19.5679 10.1719L18.8647 10.4531L15.5835 11.9062V14.9531L16.2866 18.6094L16.4272 19.3594L14.9741 19.6406L14.8335 18.9375L14.1772 15.75H12.4429L11.7866 18.9375L11.646 19.6406L10.1929 19.3594L10.3335 18.6094L11.0835 14.9531V11.9062L7.75537 10.4531L7.05225 10.1719L7.66162 8.76562ZM12.5835 12V14.25H14.0835V12H12.5835Z" fill="#2286E3"></path> </svg>
+                                    </div>
+                                    <div class="sb_s-Title">Accessibility & Compliance</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+</div>
+
+  <section class="services-section">
+
+    <!-- Interactive Social Media Details Section -->
+  <div class="interactive-wrapper">
+    
+    <!-- Left: Hoverable Inner Boxes -->
+    <div class="left-side">
+      <div class="inner-boxes" id="hover-boxes">
+        <div class="inner-box" data-target="instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon" alt="Instagram">
+          <div class="icon-text-wrapper">
+            <strong>Instagram</strong>
+            <p>Expert Instagram management to grow your brand and engage your audience effortlessly.</p>
+          </div>
+        </div>
+        <div class="inner-box" data-target="linkedin">
+          <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" class="icon" alt="LinkedIn">
+          <div class="icon-text-wrapper">
+            <strong>LinkedIn</strong>
+            <p>Professional LinkedIn management to elevate your network and boost brand credibility.</p>
+          </div>
+        </div>
+        <div class="inner-box" data-target="facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" class="icon" alt="Facebook">
+          <div class="icon-text-wrapper">
+            <strong>Facebook</strong>
+            <p>Effective Facebook management to grow your community and enhance brand engagement.</p>
+          </div>
+        </div>
+          <h3>Social Media Management</h3>
+          <p>Manage and grow your social media presence with tailored strategies that increase brand awareness and foster audience engagement.</p>
+		
+		
+      </div>
+    </div>
+
+    <!-- Right: Dynamic Detail Box -->
+    <div class="right-side">
+      <div class="detail-box" id="instagram">
+
+<div class="icon-heading">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon" alt="Instagram">
+    <strong>Instagram Marketing</strong>
+  </div>
+<p>We create stunning visuals and reels that connect with your audience and boost visibility.</p>
+  <a href="#" class="read-more">Read More →</a>
+  <!--
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon" alt="Instagram">
+        <strong>Instagram Marketing</strong>
+        <p>We create stunning visuals and reels that connect with your audience and boost visibility.</p>
+        <a href="#" class="read-more">Read More →</a>-->
+      </div>
+      <div class="detail-box" id="linkedin">
+        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" class="icon" alt="LinkedIn">
+        <strong>LinkedIn Strategy</strong>
+        <p>Build authority through powerful content and networking on the world's largest professional platform.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+      <div class="detail-box" id="facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" class="icon" alt="Facebook">
+        <strong>Facebook Engagement</strong>
+        <p>Engage local and global audiences with targeted content and ad campaigns.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>	  
+    </div>
+  </div>
+
+<!-- Section 1: Left Image, Right Content -->
+  <section class="sectionlr">
+    <div class="section-image">
+      <img src="content-marketing.jpg" alt="Web Development">
+    </div>
+    <div class="section-content">
+      <h2>Crafting Engaging Web Experiences</h2>
+      <p>
+        Our team blends creativity with cutting-edge technology to design user-friendly, conversion-optimized websites. From market research to launch, we create experiences that delight your audience and elevate your digital presence.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2: Left Content, Right Image -->
+  <section class="sectionlr reverse">
+    <div class="section-content">
+      <h2>Smart Digital Marketing That Delivers</h2>
+      <p>
+        At IOGOOS Solution, we implement data-driven marketing strategies to grow your business. Whether it's SEO, PPC, or social media, we position your brand to reach the right audience and generate real results.
+      </p>
+    </div>
+    <div class="section-image">
+      <img src="content-marketing.jpg" alt="Digital Marketing">
+    </div>
+  </section>
+
+
+
+    <div class="services-grid">
+      <!-- SEO Optimization -->
+      <div class="service-card">
+        <div class="card-inner left-align">
+          <div class="image-wrapper">
+            <img src="content-marketing.jpg" alt="SEO Optimization" class="service-img">
+          </div>
+          <h3>SEO Optimization</h3>
+          <p>Enhance your website’s search engine ranking with proven strategies to attract organic traffic and increase online presence.</p>
+        </div>
+      </div>
+
+      <!-- Digital Advertising -->
+      <div class="service-card">
+        <div class="card-inner">
+
+          <div class="inner-boxes">
+            <div class="inner-box">
+              <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon" alt="Instagram">
+              <div class="icon-text-wrapper">
+                <strong>Instagram</strong>
+                <p>Expert Instagram management to grow your brand and engage your audience effortlessly.</p>
+              </div>
+            </div>
+            <div class="inner-box">
+              <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" class="icon" alt="LinkedIn">
+              <div class="icon-text-wrapper">
+                <strong>LinkedIn</strong>
+                <p>Professional LinkedIn management to elevate your network and boost brand credibility.</p>
+              </div>
+            </div>
+            <div class="inner-box">
+              <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" class="icon" alt="Facebook">
+              <div class="icon-text-wrapper">
+                <strong>Facebook</strong>
+                <p>Effective Facebook management to grow your community and enhance brand engagement.</p>
+              </div>
+            </div>
+          </div>
+                    
+          <h3>Digital Advertising</h3>
+          <p>Craft targeted ad campaigns across various platforms to boost your brand’s visibility and drive conversions.</p>
+        </div>
+      </div>
+    </div></section>
+	  
+      <!-- =================WORK TOGETHER SECTION -->
+      <div class="build">
+         <a href="#">
+            <div class="container">
+               <h2>When We Work Together</h2>
+               <p>We can create something incredible</p>
+               <img src="img/arrow_right.svg" alt="arrow">
+            </div>
+         </a>
+      </div>
+      <!-- =================LET DISCUSS SECTION -->
+      <section class="letDiscuss parallax">
+         <div class="container">
+            <div class="row">
+               <div class="col_sm_4">
+                  <div class="fiveStar">
+                     <h3>Let's Do Great Things Together</h3>
+                     <h2>4.9 / 5.0</h2>
+                     <div class="fiveStarIcon">
+                        <img src="img/star.webp" alt="Let's Do Great Things Together">
+                     </div>
+                     <div class="fiveStarP">
+                        <p>By 2000+ customers for 7000+ Web and <br>Mobile App development projects.</p>
+                     </div>
+                     <div class="boxDetails">
+                        <div class="boxDetailsR">
+                           <div class="bdrImg"><img src="img/phone.png" alt=""></div>
+                           <div class="bdrText">
+                              <p>Get In Touch By Email</p>
+                              <a href="mailto:info@iogoos.com">info@iogoos.com</a>
+                           </div>
+                        </div>
+                        <div class="boxDetailsR">
+                           <div class="bdrImg"><i class="fa fa-mobile"></i></div>
+                           <div class="bdrText">
+                              <p>Why Not Give Us A Call</p>
+                              <a href="tel:+1-315-215-0919">+1-315-215-0919</a>
+                           </div>
+                        </div>
+                        <div class="boxDetailsR">
+                           <div class="bdrImg"><i class="fa fa-mobile"></i></div>
+                           <div class="bdrText">
+                              <p>Why Not Give Us A Call</p>
+                              <a href="tel:+91-9136747327">+91-9136747327</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col_sm_8">
+                  <div class="discusssForm">
+                     <form>
+                        <h2>Let Discuss Your Project</h2>
+                        <div class="formbox">
+                           <div class="row">
+                              <div class="col-sm-6">
+                                 <div class="form-group">
+                                    <input type="text" placeholder="Your Name" name="name">
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="form-group">
+                                    <input type="text" placeholder="Your Work Email" name="email">
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="form-group">
+                                    <select id="country">
+                                       <option value="">Country</option>
+                                       <option value="Afghanistan">Afghanistan</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="form-group">
+                                    <input type="text" placeholder="Contact Number" name="phone">
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="form-group">
+                                    <select class="form-control" name="budget" id="budget">
+                                       <option value="Budget">Budget</option>
+                                       <option value="$0-$500">$0-$500</option>
+                                       <option value="$500-$1000">$500-$1,000</option>
+                                       <option value="$1000-$1500">$1,000-$1,500</option>
+                                       <option value="$1500-$2500">$1,500-$2,500</option>
+                                       <option value="$2500-$4500">$2,500-$4,500</option>
+                                       <option value="$4500-$7000">$4,500-$7,000</option>
+                                       <option value="$7000-$10000">$7,000-$10,000</option>
+                                       <option value="$10000-$15000">$10,000-$15,000</option>
+                                       <option value="$15000-$25000">$15,000-$25,000</option>
+                                       <option value="$25000-$50000">$25,000-$50,000</option>
+                                       <option value="$50000+">$50,000+</option>
+                                       <option value="not sure">not sure</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="form-group">
+                                    <select name="your-menu2" class="form-control">
+                                       <option value="">Time Estimation*</option>
+                                       <option value="ASAP">ASAP</option>
+                                       <option value="4-8 Weeks">4-8 Weeks</option>
+                                       <option value="8-12 Weeks">8-12 Weeks</option>
+                                       <option value="12-16 Weeks">12-16 Weeks</option>
+                                       <option value="16+ Weeks">16+ Weeks</option>
+                                       <option value="Whatever it takes">Whatever it takes</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="checkBox">
+                           <h4>What Can we Do for you ?</h4>
+                           <ul class="worktypelst">
+                              <li>
+                                 <input type="checkbox" class="wt-1" id="worktype1" name="worktype[]" value="Product Development">
+                                 <label for="worktype1">
+                                 <i class="fa fa-check-circle"></i>
+                                 <img src="img/productdevelopment.webp" width="138" height="80" alt="img" class="">
+                                 <span class="span_pop1">Ecommerce</span>
+                                 </label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" class="wt-1" id="worktype2" name="worktype[]" value="Web Development">
+                                 <label for="worktype2">
+                                 <i class="fa fa-check-circle"></i>
+                                 <img src="img/webdevelopment.webp" width="138" height="80" alt="img" class="">
+                                 <span class="span_pop1">Web Development</span>
+                                 </label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" class="wt-1" id="worktype3" name="worktype[]" value="UX/UI Design">
+                                 <label for="worktype3">
+                                 <i class="fa fa-check-circle"></i>
+                                 <img src="img/uxuidesign.webp" width="138" height="80" alt="img" class="">
+                                 <span class="span_pop1">UX/UI <br>Design</span>
+                                 </label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" class="wt-1" id="worktype4" name="worktype[]" value="Mobile App Development">
+                                 <label for="worktype4">
+                                 <i class="fa fa-check-circle"></i>
+                                 <img src="img/mobileapp.webp" width="138" height="80" alt="img" class="">
+                                 <span class="span_pop1">Mobile App Development</span>
+                                 </label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" class="wt-1" id="worktype5" name="worktype[]" value="Digital Marketing">
+                                 <label for="worktype5">
+                                 <i class="fa fa-check-circle"></i>
+                                 <img src="img/digitalmarketing.webp" width="138" height="80" alt="img" class="">
+                                 <span class="span_pop1">Digital Marketing</span>
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="textarebox">
+                           <div class="row">
+                              <div class="col-sm-12">
+                                 <div class="form-group">
+                                    <textarea placeholder="Your Requirements" id="coment" name="comment" cols="30" rows="4"></textarea>
+                                    <span class="choose_file"><input type="file"></span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="top-box letsDiscussbtn">
+                           <div class="form-group captcha"></div>
+                           <div class="form-group">
+                              <div class="button_ second-button_">
+                                 <input type="submit" class="btn_ btn-secondary_ animateBtn3" value="SUBMIT">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="numberRow">
+                           <ul>
+                              <li>
+                                 <a href="#"><img src="img/usa.webp" alt="img" class=""> +1-315 215 0919</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="img/india.webp" alt="img" class=""> +91-913 674 7327</a>
+                              </li>
+                              <!-- <li>
+                                 <a href="#"><img src="img/southafrica.webp" alt="img" class=""> +27-110 839 444</a>
+                              </li> -->
+                              <li>
+                                 <a href="#"><img src="img/australia.webp" alt="img" class=""> +61-08 8121 4401</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =================FOOTER SECTION -->
+      <section class="location">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-3">
+                  <img src="img/iogoosIndia.svg" alt="">
+                  <div class="locationTitle">HQ INDIA</div>
+                  <div class="locationAddress">
+                     C-31, Milap Nagar, Uttam Nagar, New Delhi, Delhi 110059
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <img src="img/hq-usa.svg" alt="">
+                  <div class="locationTitle">USA</div>
+                  <div class="locationAddress">
+                     6715 Backlick Rd Suite 202, Springfield, VA 22150, United States
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <img src="img/iogoosIndia.svg" alt="">
+                  <div class="locationTitle">BIHAR</div>
+                  <div class="locationAddress">
+                     Morya Lok Complex, 25/26 A, New Dak Bunglow Rd, Patna, Bihar 800001
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <img src="img/iogoosIndia.svg" alt="">
+                  <div class="locationTitle">HARAYANA</div>
+                  <div class="locationAddress">
+                     Unit no. 202, 2nd Floor, Qutub Plaza, DLF CITY PHASE 1, Gurgaon, Haryana
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <img src="img/iogoosIndia.svg" alt="">
+                  <div class="locationTitle">UAE</div>
+                  <div class="locationAddress">
+                     Unit no. 202, 2nd Floor, Qutub Plaza, DLF CITY PHASE 1, Gurgaon, Haryana
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <img src="img/iogoosIndia.svg" alt="">
+                  <div class="locationTitle">CANADA</div>
+                  <div class="locationAddress">
+                     Unit no. 202, 2nd Floor, Qutub Plaza, DLF CITY PHASE 1, Gurgaon, Haryana
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="topFooter">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-4 contactN contactN1">
+                     <div class="requestAquote">
+                        <div class="cntnImg"><img src="img/requestAquote.png" alt="phone"></div>
+                        <div class="cntnD"><a href="#">Request A Quote</a></div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 contactN contactN2">
+                     <div class="phone">
+                        <div class="cntnImg"><img src="img/phone.png" alt="phone"></div>
+                        <div class="cntnD">
+                           <h3>PHONE</h3>
+                           <p><a href="tel:+13152150919">(+1) 315 215 0919</a></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 contactN contactN3">
+                     <div class="email">
+                        <div class="cntnImg"><img src="img/mail.png" alt="mail"></div>
+                        <div class="cntnD">
+                           <h3>EMAIL</h3>
+                           <p><a href="mailto:info@iogoos.com">info@iogoos.com</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="middleFooter">
+            <div class="container">
+               <div class="row">
+                  <div class="col_sm_box col_sm_box2">
+                     <div class="fooMenu">
+                        <h3>WEB DESIGN/DEVELOPMENT SERVICES</h3>
+                        <hr>
+                        <ul class="mMob-b">
+                           <li><a href="mobile-app-development-services.html">Mobile Application Development</a>
+                           <li><a href="website-design-services.html">Website Designing Services</a>
+                           <li><a href="website-development-services.html">Website Development</a>
+                           <li><a href="php-website-development-compan.html">php-website-development-services</a>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col_sm_box col_sm_box3">
+                     <div class="fooMenu">
+                        <h3>MOBILE APP DEVELOPMENT SERVICES</h3>
+                        <hr>
+                        <ul class="mMob">
+                           <li><a href="">Android App Development</a>
+                           <li><a href="">IOS Apps Development</a>
+                           <li><a href="">Windows App Development</a>
+                           <li><a href="">Native Apps Development</a>
+                           <li><a href="">PhoneGap Apps Development</a>
+                           <li><a href="">Ionic Apps Development</a>
+                        </ul>
+                        <div class="socialMedia">
+                           <div class="sm">
+                              <ul>
+                                 <li><a href="https://www.facebook.com/iogoossolution"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a href="https://twitter.com/iogoossolution"><i class="fa fa-twitter"></i></a></li>
+                                 <li><a href="https://www.pinterest.com/iogoossolution/"><i class="fa fa-pinterest"></i></a></li>
+                                 <li><a href="https://in.linkedin.com/company/iogoossolution"><i class="fa fa-linkedin"></i></a></li>
+                              </ul>
+                           </div>
+                           <div class="langBtn">
+                              <a href="#">English</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col_sm_box col_sm_box4">
+                     <div class="fooMenu">
+                        <h3>DIGITAL MARKETING SERVICES</h3>
+                        <hr>
+                        <ul class="mMob-b">
+                           <li><a href="pay-per-click-service.html">Pay Per Click</a>
+                           <li><a href="content-marketing-services.html">Content Marketing</a>
+                           <li><a href="social-media-marketing-services.html">Social Media Marketing</a>
+                           <li><a href="paid-media.html">Paid Media Advertising</a>
+                           <li><a href="seo-services.html">Search Engine Optimization</a>
+                           <li><a href="seo-pricing.html">SEO Pricing</a>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col_sm_box col_sm_box5">
+                     <div class="fooMenu">
+                        <h3>ECOMMERCE SERVICES</h3>
+                        <hr>
+                        <ul>
+                           <li><a href="magento-development-services.html">Magento Development Service</a>
+                           <li><a href="shopify-development-services.html">Shopify Development Services</a>
+                           <li><a href="prestashop-development-services.html">PrestaShop Development Services</a>
+                           <li><a href="ecommerce-development-service.html">Ecommerce Development Services</a>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bottomFooter">
+            <div class="foooterNumber">
+               <div class="container">
+                  <div class="numRow">
+                     <div class="nuCol"><a href="tel:+13152150919"><img src="img/usa.webp" alt=""> +1-315 215 0919</a></div>
+                     <div class="nuCol"><a href="tel:+919136747327"><img src="img/india.webp" alt=""> +91-913 674 7327</a></div>
+                    <!--  <div class="nuCol"><a href="tel:+27110839444"><img src="img/southafrica.webp" alt=""> +27-110 839 444</a></div> -->
+                     <div class="nuCol"><a href="tel:+610881214401"><img src="img/australia.webp" alt=""> +61-08 8121 4401</a></div>
+                     <div class="nuCol"><a href="https://unisoftinformatics.com/"><i class="fa fa-skype"></i> unisoft.info</a></div>
+                     <div class="nuCol"><a href="mailto:info@iogoos.com"><i class="fa fa-envelope-open"></i> info@iogoos.com</a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="fT1">
+                           <p>Copyright © 2022 <a href="index.html">IOGOOS SOLUTION.</a> All rights reserved. </p>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 ft2-center">
+                        <div class="fT2"><a href="privacy-policy.html">IOGOOS SOLUTION Privacy Policy</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- =================ENQUIRY FORM POPUP BOX -->
+      <a id="get-fixed-button" class="get-fixed-button" data-bs-toggle="modal" data-bs-target="#myModal">Enquiry Now</a>
+      <div class="modal EnquiryModal" id="myModal">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <div class="inner">
+                     <div class="left">
+                        <img src="img/logo.svg" height="74" width="150" alt="logo">
+                     </div>
+                     <div class="right">
+                        <h4 class="modal-title">Get In Touch</h4>
+                        <p>Our consultants will respond back within 8 business hours or less.</p>
+                     </div>
+                  </div>
+                  <button type="button" class="cls-btn" data-bs-dismiss="modal"><i class="fa fa-close"></i></button>
+               </div>
+               <div class="modal-body">
+                  <form action="#">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="form-group">
+                                 <label class="form-label">Full Name:</label>
+                                 <input type="text" class="form-control" placeholder="Enter username">      
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-group">
+                                 <label class="form-label">Email Address:</label>
+                                 <input type="text" class="form-control" placeholder="Enter username">      
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-group">
+                                 <label class="form-label">Phone Number:</label>
+                                 <input type="text" class="form-control" placeholder="Enter username">      
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-group select">
+                                 <label class="form-label">I Need hehp with:</label>
+                                 <div class="select-box">
+                                    <div class="select-box__current" tabindex="1">
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked">
+                                          <p class="select-box__input-text">Website Design</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="1" value="2" name="Ben">
+                                          <p class="select-box__input-text">Website Development</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="2" value="3" name="Ben">
+                                          <p class="select-box__input-text">E-Commerce Website</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="3" value="4" name="Ben">
+                                          <p class="select-box__input-text">Content management System</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="4" value="5" name="Ben">
+                                          <p class="select-box__input-text">Paid Search Marketing</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="5" value="6" name="Ben">
+                                          <p class="select-box__input-text">Internet Marketing</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="6" value="7" name="Ben">
+                                          <p class="select-box__input-text">Social Media Marketing</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="7" value="8" name="Ben">
+                                          <p class="select-box__input-text">Email marketing</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="8" value="9" name="Ben">
+                                          <p class="select-box__input-text">Graphics Design</p>
+                                       </div>
+                                       <span class="drop-icon"></span>
+                                    </div>
+                                    <ul class="select-box__list">
+                                       <li>
+                                          <label class="select-box__option" for="0" >Website Design</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="1" >Website Development</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="2" >E-Commerce Website</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="3" >Content management System</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="4" >Paid Search Marketing</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="5" >Internet Marketing</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="6" >Social Media Marketing</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="7" >Email marketing</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="8" >Graphics Design</label>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-group select">
+                                 <label class="form-label">My Budget is about:</label>
+                                 <div class="select-box">
+                                    <div class="select-box__current" tabindex="2">
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="15" value="16" name="Ben2" checked="checked">
+                                          <p class="select-box__input-text">$0-$500</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="16" value="17" name="Ben2">
+                                          <p class="select-box__input-text">$500-$1,000</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="17" value="18" name="Ben2">
+                                          <p class="select-box__input-text">$1,000-$1,500</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="18" value="19" name="Ben2">
+                                          <p class="select-box__input-text">$1,500-$2,500</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="19" value="20" name="Ben2">
+                                          <p class="select-box__input-text">$2,500-$4,500</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="20" value="21" name="Ben2">
+                                          <p class="select-box__input-text">$4,500-$7,000</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="21" value="22" name="Ben2">
+                                          <p class="select-box__input-text">$7,000-$10,000</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="22" value="23" name="Ben2">
+                                          <p class="select-box__input-text">$10,000-$15,000</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="23" value="24" name="Ben2">
+                                          <p class="select-box__input-text">$15,000-$25,000</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="24" value="25" name="Ben2">
+                                          <p class="select-box__input-text">$25,000-$50,000</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="25" value="26" name="Ben2">
+                                          <p class="select-box__input-text">$50,000+</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="26" value="27" name="Ben2">
+                                          <p class="select-box__input-text">not sure</p>
+                                       </div>
+                                       <span class="drop-icon"></span>
+                                    </div>
+                                    <ul class="select-box__list">
+                                       <li>
+                                          <label class="select-box__option" for="15" >$0-$500</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="16" >$500-$1,000</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="17" >$1,000-$1,500</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="18" >$1,500-$2,500</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="19" >$2,500-$4,500</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="20" >$4,500-$7,000</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="21" >$7,000-$10,000</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="22" >$10,000-$15,000</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="23" >$15,000-$25,000</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="24" >$25,000-$50,000</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="25" >$50,000+</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="25" >not sure</label>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-group select">
+                                 <label class="form-label">Country:</label>
+                                 <div class="select-box">
+                                    <div class="select-box__current" tabindex="2">
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="27" value="28" name="Ben3" checked="checked">
+                                          <p class="select-box__input-text">India</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="28" value="29" name="Ben3">
+                                          <p class="select-box__input-text">Pakistan</p>
+                                       </div>
+                                       <div class="select-box__value">
+                                          <input class="select-box__input" type="radio" id="29" value="30" name="Ben3">
+                                          <p class="select-box__input-text">China</p>
+                                       </div>
+                                       <span class="drop-icon"></span>
+                                    </div>
+                                    <ul class="select-box__list">
+                                       <li>
+                                          <label class="select-box__option" for="27" >India</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="28" >Pakistan</label>
+                                       </li>
+                                       <li>
+                                          <label class="select-box__option" for="29" >China</label>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-group choose-file">
+                                 <label class="form-label">Type a message :</label> 
+                                 <input type="file" class="form-control">           
+                                 <textarea class="form-control" rows="4" cols="50"></textarea>     
+                              </div>
+                           </div>
+                        </div>
+                        <button type="submit" class="sbmt-btn">Submit</button>
+                        <ul class="bottom-info">
+                           <li><a href="#"><img src="img/usa.webp" alt="img"> +1-315 215 0919</a></li>
+                           <li><a href="#"><i class="fa fa-envelope-open"></i> info@iogoos.com</a></li>
+                        </ul>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="callyouback">
+            <div class="callyouback_bg"></div>
+            <div class="inner_box_call">
+               <div class="ccall_Close">X</div>
+               <h3>Let Us Call You Back</h3>
+               <div class="form">
+                  <form data-hs-cf-bound="true">
+                     <div class="form__grouppp form-group">
+                        <div class="mob_no intl-tel-input">
+                           <div class="selected-flag" tabindex="0" title="India: +91">
+                              <div class="iti-flag in"></div>
+                              <div class="iti-arrow"></div>
+                           </div>
+                           <ul class="country-list hide">
+                              <li class="country preferred active" data-dial-code="+91" data-country-code="in" data-phone="954 000 7839">
+                                 <div class="flag-box">
+
+                                    <div class="iti-flag in"></div>
+                                 </div>
+                                 <span class="country-name">India</span><span class="dial-code">+91</span>
+                              </li>
+                              <li class="country preferred" data-dial-code="+1" data-country-code="us" data-phone="315 215 0919">
+                                 <div class="flag-box">
+                                    <div class="iti-flag us"></div>
+                                 </div>
+                                 <span class="country-name">United States</span><span class="dial-code">+1</span>
+                              </li>
+                              <li class="country preferred highlight" data-dial-code="+971" data-country-code="ae" data-phone="557255764">
+                                 <div class="flag-box">
+                                    <div class="iti-flag ae"></div>
+                                 </div>
+                                 <span class="country-name">United Arab Emirates</span><span class="dial-code">+971</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="contry__code">
+                           <input class="selected-contID" readonly="readonly" value="+91">
+                        </div>
+                        <input type="tel" id="phone_popup" placeholder="Enter Mobile No." name="mobile_no" autocomplete="off" value="954 000 7839">
+                     </div>
+                     <div class="submit_btnbtn"><input onclick="getAndSetVal();" type="button" value="CALL NOW"></div>
+                  </form>
+                  <p>Your phone number is kept confidential <br>and not shared with others.</p>
+               </div>
+            </div>
+         </div>
+      <!-- =================JAVASCRIPT SECTION -->
+      <script src="js/jquery.slim.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/parallax.min.js"></script>
+      <script src="js/slick.js"></script>
+      <script src="js/custom.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const boxes = document.querySelectorAll('#hover-boxes .inner-box');
+    const detailBoxes = document.querySelectorAll('.detail-box');
+
+    boxes.forEach(box => {
+      box.addEventListener('mouseenter', () => {
+        const targetId = box.getAttribute('data-target');
+        
+        // Hide all detail boxes
+        detailBoxes.forEach(detail => detail.classList.remove('active'));
+        
+        // Show the matched detail box
+        const targetBox = document.getElementById(targetId);
+        if (targetBox) {
+          targetBox.classList.add('active');
+        }
+      });
+    });
+
+    // Optional: set default visible detail box on load
+    const defaultBox = document.getElementById('instagram');
+    if (defaultBox) {
+      defaultBox.classList.add('active');
+    }
+  });
+
+  </script>
+
+   </body>
+</html>

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'GT Super Display';
+    src: url('GTSuperDisplay-Medium.woff2') format('woff2'),
+        url('GTSuperDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('AktivGrotesk-Bold.woff2') format('woff2'),
+        url('AktivGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('AktivGrotesk-Regular.woff2') format('woff2'),
+        url('AktivGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('AktivGrotesk-Medium.woff2') format('woff2'),
+        url('AktivGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
