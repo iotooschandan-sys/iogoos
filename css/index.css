@@ -2807,6 +2807,7 @@ section.trusted {
 .counter_section {
     border-top: 1px solid #00000014;
     padding-top: 10px;
+    margin-top: 10px;
 }
 
 .counter_number{
@@ -4244,12 +4245,12 @@ table td{
 
 /* CTA CARD */
 
-.cta-card{
-    color:#fff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
+.cta-card {
+    color: #fff;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 64% 36%;
 }
 
 .cta-card-bg{
