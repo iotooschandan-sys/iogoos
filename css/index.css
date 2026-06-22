@@ -31,9 +31,7 @@ linear-gradient(
 
 
 section {
-    padding: 80px;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding: 80px 0;
 }
 /* =========================
    HERO
@@ -119,14 +117,6 @@ mask-image: linear-gradient(to bottom, transparent 0%, rgb(0 0 0 / 67%) 15%, #00
 /* =========================
    CONTAINER
 ========================= */
-
-.container {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 1450px !important;
-  margin: auto;
-}
 
 /* =========================
    NAVBAR
@@ -1834,7 +1824,6 @@ RIGHT SIDE ELEGANT SLIDER
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   gap: 10px;
-  padding: 0 20px;
 }
 
 /* soft top border glow */
@@ -3155,13 +3144,6 @@ span.arrow.pf-arrow:hover{
     right:-150px;
 }
 
-.container{
-    max-width:1400px;
-    margin:auto;
-    position:relative;
-    z-index:2;
-}
-
 .top-content{
     display:grid;
     grid-template-columns:1.5fr .8fr;
@@ -3778,9 +3760,6 @@ section.growth-stats-section {
 
     max-width:1400px;
     margin:auto;
-
-    padding:80px 60px;
-
     position:relative;
     overflow:hidden;
 

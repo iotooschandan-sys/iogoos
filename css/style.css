@@ -11023,13 +11023,13 @@ body {
    CONTAINER
 ========================= */
 
-.container {
+/* .container {
   position: relative;
   z-index: 2;
   width: 100%;
   max-width: 1450px !important;
   margin: auto;
-}
+} */
 
 /* =========================
    NAVBAR
