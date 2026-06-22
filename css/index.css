@@ -320,7 +320,6 @@ img.c-img {
   font-size: 13px;
   line-height: 1.60;
   font-weight: 500;
-  white-space: nowrap;
 }
 
 /* =========================
@@ -959,9 +958,6 @@ ul.email-lst li {
 
 @media(max-width:768px) {
 
-  .container {
-    padding: 22px 12px 30px;
-  }
 
   .navbar {
     flex-direction: column;

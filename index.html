@@ -2317,7 +2317,7 @@
               <i class="fa-solid fa-envelope"></i>
               <input type="email" placeholder="Enter your email">
               <button class="mb-btn">→</button>
-              <button class="site-btn">Book Free Consultation →</button>
+              <button class="site-btn d-lg-block d-none">Book Free Consultation →</button>
             </div>
             <p class="d-none mb-txt">Enter your email for free consultancy</p>
             <ul class="email-lst">
@@ -4499,6 +4499,23 @@
    <script src="js/slick.js"></script>
    <script src="js/custom.js"></script>
    <script src="js/index.js"></script>
+
+<script>
+document.querySelectorAll("*").forEach(el => {
+    const rect = el.getBoundingClientRect();
+
+    if (rect.right > window.innerWidth) {
+        console.log(
+            "Overflow Element:",
+            el,
+            "Right:",
+            rect.right,
+            "Window:",
+            window.innerWidth
+        );
+    }
+});
+</script>
    
 </body>
 
