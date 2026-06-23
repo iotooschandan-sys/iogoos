@@ -206,6 +206,10 @@ h2 {
 .site-btn {
     font-size: 15px;
 }
+.migration-cta .site-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+}
 .growth-stats-wrapper {
     padding: 0 10px;
 }
