@@ -130,14 +130,13 @@ h2 {
     grid-template-columns: 1fr;
     gap: 15px;
     margin-bottom: 25px;
+    display: block;
 }
 .left-content h2 {
     font-size: 30px !important;
 
 }
-.migration-container {
-    padding: 40px 10px !important;
-}
+
 .section-header p {
     max-width: 100%;
     font-size: 18px;
