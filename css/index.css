@@ -4314,6 +4314,9 @@ table td{
 -------------------- Blog details css
 ==========================================================================*/
 
+main.blog-details-page {
+    background: #f3f3f3;
+}
 
      .bd-hero {
     padding: 60px 0 40px;
@@ -4392,7 +4395,7 @@ table td{
             height: 100%;
             background: #2159b2;
             color: #fff;
-            padding: 40px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -4612,7 +4615,7 @@ CONTENT
 
 
         .takeaway-box {
-            background: #ebe7e7;
+            background: #fff;
             border-radius: 24px;
             padding: 30px;
             margin-bottom: 50px;
@@ -4661,7 +4664,7 @@ CONTENT
 
         .content-section p {
             margin-bottom: 10px;
-            color: #1C1C1C;
+            color: #4c4c4c;
             font-size: 18px;
         }
 
@@ -4757,11 +4760,11 @@ CONTENT
 .cta-left p {
     margin-top: 8px;
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
 }
 .cta-box .cta-right {
     display: flex;
-    gap: 70px;
+    gap: 18px;
     z-index: 1;
     align-items: center;
 }
@@ -4822,7 +4825,7 @@ CONTENT
 }
 
 .bd-ctabox .cta-left h2 {
-    font-size: 30px !important;
+    font-size: 24px !important;
 }
 .bd-ctabox .cta-cont h4 {
     font-size: 18px;
@@ -4907,6 +4910,187 @@ CONTENT
 div#section5 {
     margin-top: 40px;
 }
+
+
+/* related article post */
+
+
+        .related {
+            padding-top: 0;
+        }
+
+        .related-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 28px;
+        }
+
+        .related-top h2 {
+            font-size: 42px;
+            color: #2B3160;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .article-card {
+            background: #fff;
+            border-radius: 22px;
+            overflow: hidden;
+            transition: .3s;
+            border: 1px solid #ececec;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-img {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .article-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 24px;
+        }
+
+        .article-tag {
+            color: #EF4137;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .article-content h3 {
+            font-size: 24px;
+            line-height: 1.3;
+            color: #2B3160;
+        }
+
+
+.blog-card{
+    background:#fff;
+    border-radius:20px;
+    padding:12px;
+    overflow:hidden;
+    position:relative;
+    transition:all .4s ease;
+}
+.blog-card:hover h3 a{
+  color: #fff !important;
+}
+
+
+.blog-card img{
+    width:100%;
+    border-radius:15px;
+    transition:transform .5s ease;
+}
+
+.blog-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+    background: #2159b299;
+}
+
+.blog-card:hover img{
+    transform:scale(1.03);
+}
+
+.blog-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.3),
+        transparent
+    );
+    transition:.7s;
+    z-index:1;
+}
+
+.blog-card:hover::before{
+    left:100%;
+}
+.blog-card:hover{
+    transform:translateY(-5px);
+}
+
+.blog-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.blog-content{
+    padding:20px 0 60px;
+}
+
+.category{
+    display:block;
+    font-size:11px;
+    text-transform:uppercase;
+    color:#7a7a7a;
+    margin-bottom:12px;
+}
+
+.blog-content h3{
+    font-size:24px;
+    line-height:1.4;
+    font-weight:400;
+}
+
+.blog-content h3 a{
+    text-decoration:none;
+    color:#09235C;
+}
+
+.read-more{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#f3f3f3;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#09235C;
+    text-decoration:none;
+    transition:.3s;
+    transform: rotate(-45deg);
+}
+
+.read-more:hover i{
+  color: #fff;
+}
+
+.read-more:hover{
+    background:#143a7b;
+    color:#fff;
+}
+
+
+
+
+
 /*  ====================================================================================================
 --------------------------  Responsive 
 ====================================================================================================*/
