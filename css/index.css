@@ -4688,7 +4688,7 @@ BLOG LAYOUT
       .blog-grid {
           display: grid;
           grid-template-columns: 345px 1fr;
-          gap: 20px;
+          gap: 6px;
       }
 
         /* =========================
@@ -4729,6 +4729,14 @@ bd-sidebar
           text-decoration: none;
       }
 
+        .toc-list a.active{
+          color: #052351;
+          font-weight: 600;
+          border-left: 3px solid #052351;
+        }
+        .toc-list a.active::before{
+          display: none;
+        }
         .toc-list a:before {
             content: "";
             position: absolute;
@@ -4776,7 +4784,7 @@ CONTENT
 ========================= */
 
         .bd-content {
-            background: #F1F7FD;
+            background: #fff;
             border-radius: 30px;
             padding: 20px;
         }
@@ -4853,12 +4861,12 @@ CONTENT
         }
 
 
-        .takeaway-box {
-            background: #fff;
-            border-radius: 24px;
-            padding: 30px;
-            margin-bottom: 50px;
-        }
+    .takeaway-box {
+        background: #f3f3f3;
+        border-radius: 24px;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
 
         .takeaway-box h3 {
             font-size: 28px;
@@ -4871,13 +4879,30 @@ CONTENT
         }
 
        .takeaway-box li {
-    margin-bottom: 14px;
-    color: #1C1C1C;
-}
+          margin-bottom: 8px;
+          color: #1C1C1C;
+          list-style-type: disc;
+      }
 
         .content-section {
             margin-bottom: 40px;
             scroll-margin-top: 120px;
+        }
+        a.border-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 20px;
+            border: 1px solid #1c1c1c;
+            border-radius: 12px;
+            color: #1c1c1c;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .border-btn:hover{
+          transform: translateY(-5px) scale(1.02);
         }
 
         .content-section h2 {
@@ -5078,8 +5103,18 @@ CONTENT
 .post-item {
     display: flex;
     gap: 10px;
-    padding: 15px 0;
+    padding: 15px 5px;
     border-bottom: 1px solid #e5e5e5;
+    transition: all 0.3s ease;
+}
+
+.post-item:hover {
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+    border-radius: 10px;
+    padding: 15px 5px;
+
 }
 
 .post-item:last-child {
@@ -5134,7 +5169,7 @@ CONTENT
 }
 
 .cleaning_card {
-    border-radius: 32px;
+    border-radius: 24px;
     padding: 25px;
     margin-top: 24px;
 }

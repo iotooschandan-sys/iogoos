@@ -144,6 +144,18 @@ button.mb-btn {
     display: none;
 }
 
+.toc-list {
+    gap: 10px;
+}
+.topic-acc .accordion-body {
+    padding: 0 5px 10px;
+}
+a.border-btn {
+    gap: 0px;
+    padding: 8px 11px;
+    font-size: 14px;
+}
+
 .overlap-section {
     margin-top: -30px !important;
 }

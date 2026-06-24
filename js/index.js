@@ -73,3 +73,17 @@ var swiper = new Swiper(".portfolio-swiper", {
         }
     }
 });
+
+
+const tocLinks = document.querySelectorAll('.toc-list a');
+
+tocLinks.forEach(link => {
+    link.addEventListener('click', function() {
+
+        tocLinks.forEach(item => {
+            item.classList.remove('active');
+        });
+
+        this.classList.add('active');
+    });
+});
