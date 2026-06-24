@@ -5669,6 +5669,19 @@ div#section5 {
     color: #000;
     margin-bottom: 10px;
 }
+.project-details {
+    display: none;
+}
+.p-para{
+  display: none;
+}
+.custom-service-box:hover {
+    height: 229px;
+}
+.project-logo {
+    display: none;
+}
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
