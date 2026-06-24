@@ -2982,6 +2982,9 @@ section.trusted {
     gap:10px;
     
 }
+p.p-para {
+    width: 89%;
+}
 
 .project-sidebar{
     width:220px;
