@@ -10,6 +10,15 @@
 .bd-sidebar {
     position: unset;
 }
+
+.portfolio-right {
+    margin-top: 40px;
+}
+.testimonial-popup {
+    top: 30%;
+    left: 4% !important;
+    width: 90%;
+}
 }
 
 
