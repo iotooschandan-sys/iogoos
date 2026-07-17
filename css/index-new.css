@@ -412,6 +412,9 @@ img.c-img {
 .email-box input::placeholder{
   font-weight: 500;
 }
+.email-box .bnr-btn {
+    color: #fff !important;
+}
 
 ul.email-lst {
   list-style: none;
