@@ -274,7 +274,7 @@ mask-image: linear-gradient(to bottom, transparent 0%, rgb(0 0 0 / 67%) 15%, #00
 }
 
 .hero-title {
-  font-size: 60px;
+  font-size: 50px;
   line-height: 1.1;
   font-weight: 900;
   margin-bottom: 16px;
@@ -388,7 +388,7 @@ img.c-img {
 
 .email-bg {
   background: #4d3a810a;
-  border: 1px solid #4dd4ff9e;
+  border: 1px solid #1b355e;
   padding: 10px;
   border-radius: 12px;
   margin-bottom: 10px;
@@ -530,7 +530,7 @@ position: relative;
   font-size: 15px;
   font-weight: 600;
   background: rgba(255, 255, 255, .03);
-  border: 1px solid #4dd4ff9e;
+  border: 1px solid #1b355e;
 }
 
 
